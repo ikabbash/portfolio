@@ -1,27 +1,38 @@
-import React from 'react'
-import Logo400 from '../assets/Logo400.svg'
+import React, { useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
-export default function Navbar() {
-    return (
-        <>
-            <nav className="w-100 px-8 md:px-auto mb-40">
-                <div className="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
-                    <div className="text-indigo-500 md:order-1">
-                    <img className="pl-3 mt-2 scale-100 lg:scale-125 h-12 w-12" src={Logo400} alt="Logo" />
-                    </div>
-                    <div className="text-gray-500 order-3 w-full md:w-auto md:order-2 mt-2">
-                        <ul className="flex font-semibold justify-between">
-                            <li className="md:px-4 md:py-2 text-indigo-500"><a href="#">Dashboard</a></li>
-                            <li className="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Search</a></li>
-                            <li className="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Explore</a></li>
-                            <li className="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">About</a></li>
-                            <li className="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div className="order-2 md:order-3">
-                    </div>
-                </div>
-            </nav>
-        </>
-    )
-}
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  return (
+    <div className='flex justify-between items-center h-16 max-w mx-auto px-4 text-gray-100 sticky top-0 z-50 bg-gray-900'>
+      <h1 className='w-full text-3xl font-bold text-[#00df9a] ml-20'>REACT.</h1>
+      <ul className='hidden md:flex mr-8'>
+        <li className='p-4'>About</li>
+        <li className='p-4'>Experience</li>
+        <li className='p-4'>Blog</li>
+        <li className='p-4'>Work</li>
+        <li className='p-4'>Contact</li>
+        <li className='p-4'>Resume</li>
+      </ul>
+      <div onClick={handleNav} className='block md:hidden'>
+          {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
+      </div>
+      <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gray-900 ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
+          <li className='p-4'>About</li>
+          <li className='p-4'>Experience</li>
+          <li className='p-4'>Blog</li>
+          <li className='p-4'>Work</li>
+          <li className='p-4'>Contact</li>
+          <li className='p-4'>Resume</li>
+      </ul>
+    </div>
+  );
+};
+
+export default Navbar;

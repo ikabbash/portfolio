@@ -1,14 +1,16 @@
 import Navbar from "./components/Navbar"
 import Blogs from "./components/Blogs"
+import Sidebar from "./components/Sidebar"
+import Footer from "./components/Mobile-footer"
 function App() {
 
   return (
     <>
-      {/* <Navbar />
-      <div className="text-3xl font-bold underline">
-        Let's begin
-      </div> */}
+      <Navbar />
       <Blogs />
+      <Sidebar />
+      <Footer />
+      <div className="mb-32"></div>
     </>
   )
 }
