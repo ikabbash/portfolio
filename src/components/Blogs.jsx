@@ -81,7 +81,7 @@ export default function () {
             // );
           })}
         </div>
-        <div className="mt-10 text-4xl inline-flex m-auto">
+        <div className="mt-10 text-4xl inline-flex">
           <span className="text-2xl py-1">See all articles →</span>
               <button className="bg-white ml-3 text-gray-800 rounded border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white py-1 px-2">
                 <SiDevdotto />

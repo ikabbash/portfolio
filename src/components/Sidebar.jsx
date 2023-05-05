@@ -1,6 +1,7 @@
 import React from "react";
-import { FiYoutube, FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi";
-// import { SiHashnode } from 'react-icons/si'
+// import { FiYoutube, FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi";
+import { SiYoutube, SiInstagram, SiLinkedin, SiGithub } from "react-icons/si";
+import { RiInstagramFill } from "react-icons/ri"
 
 function Sidebar() {
   return (
@@ -8,24 +9,20 @@ function Sidebar() {
     <div className="fixed left-0 bottom-0 z-50 px-5 bg-transparent flex-col space-y-4 text-2xl ml-6 hidden md:flex">
       {/* <a href="#" title="Checkout my Github"> */}
       <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-red-600">
-        <FiGithub />
+        <SiGithub />
       </a>
 
       <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-red-600">
-        <FiLinkedin />
+        <SiLinkedin />
       </a>
 
       <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-red-600">
-        <FiYoutube />
+        <SiYoutube />
       </a>
 
       <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-red-600">
-        <FiInstagram />
+        <RiInstagramFill />
       </a>
-
-      {/* <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-red-600">
-        <SiHashnode />
-      </a> */}
 
       <div className="h-[100px] ml-2.5 bg-gray-900 w-[2px]"></div>
     </div>

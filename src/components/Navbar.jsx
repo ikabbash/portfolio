@@ -14,8 +14,8 @@ const Navbar = () => {
       <img src={Logo} alt={"Logo400"} className='ml-10 h-10 opacity-100'/>
       <ul className='hidden md:flex mr-8'>
         <li className='p-4'><span>00. </span>About</li>
-        <li className='p-4'><span>01. </span>Work</li>
-        <li className='p-4'><span>10. </span>Experience</li>
+        <li className='p-4'><span>01. </span>Experience</li>
+        <li className='p-4'><span>10. </span>Work</li>
         <li className='p-4'><span>11. </span>Blog</li>
         <li className='p-4'>Resume</li>
       </ul>
