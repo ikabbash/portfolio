@@ -53,8 +53,8 @@ export default function () {
   return (
     <>
       {/* reference: https://www.floatui.com/components/cards */}
-      <section className="mx-auto px-6 max-w-screen-xl mb-[500px]">
-        <h1 className="text-center text-4xl mt-40 font-bold">Latest Blog Posts</h1>
+      <section className="mx-auto px-6 max-w-screen-xl mb-[500px] scroll-mt-20" id="blog">
+        <h1 className="text-center text-3xl mt-40 font-bold"><span>11. </span>Latest Blog Posts</h1>
         <div className="mt-4 grid gap-3 lg:grid-cols-3 sm:grid-cols-1">
         {/* <div className="flex flex-col"> */}
           {devArticles.map((key) => {
@@ -83,10 +83,10 @@ export default function () {
         </div>
         <div className="mt-10 text-4xl inline-flex">
           <span className="text-2xl py-1">See all articles →</span>
-              <button className="bg-white ml-3 text-gray-800 rounded border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white py-1 px-2">
+              <button className="ml-3 text-gray-800 rounded transition ease-in-out hover:text-red-700 py-1 px-2">
                 <SiDevdotto />
               </button>
-              <button className="bg-white ml-3 text-gray-800 rounded border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white py-1 px-2">
+              <button className="ml-3 text-gray-800 rounded transition ease-in-out hover:text-red-700 py-1 px-2">
                 <SiHashnode />
               </button>
             </div>
