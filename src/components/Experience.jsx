@@ -35,7 +35,7 @@ function Experience() {
                     DevOps Engineer Internship
                   </h3>
                   <time className="text-xs tracking-wide uppercase">
-                    Aug 2022 - Oct 2022
+                    Aug 2022 - Sep 2022
                   </time>
                   <p className="mt-3">
                     Morbi vulputate aliquam libero non dictum. Aliquam sit amet
