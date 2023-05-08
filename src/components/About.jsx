@@ -43,16 +43,16 @@ function About() {
             </div>
           </div>
           {/* <!-- left --> */}
-          <div className="relative">
+          {/* <div className="relative">
             <img
               className="h-1/4 absolute top-0 right-0 -z-10"
-              src="./img/dots.png"
+              src="dots?"
               alt=""
             />
             <div className="h-full overflow-hidden">
-              <img src="" alt="" />
+              <img src="the tall image" alt="" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

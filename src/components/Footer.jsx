@@ -1,6 +1,5 @@
 import React from "react";
-import { FiYoutube, FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi";
-// import { SiHashnode } from 'react-icons/si'
+import { SiLinkedin, SiGithub, SiDevdotto, SiHashnode } from "react-icons/si";
 
 function Footer() {
   // https://tailwind-elements.com/docs/standard/navigation/footer/
@@ -14,28 +13,28 @@ function Footer() {
               className="mr-9 text-neutral-800 dark:text-neutral-200
               transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-red-600"
             >
-              <FiGithub />
+              <SiLinkedin />
             </a>
             <a
               href="#!"
               className="mr-9 text-neutral-800 dark:text-neutral-200
               transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-red-600"
             >
-              <FiLinkedin />
+              <SiGithub />
             </a>
             <a
               href="#!"
               className="mr-9 text-neutral-800 dark:text-neutral-200
               transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-red-600"
             >
-              <FiYoutube />
+              <SiDevdotto />
             </a>
             <a
               href="#!"
               className="text-neutral-800 dark:text-neutral-200
             transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-red-600"
             >
-              <FiInstagram />
+              <SiHashnode />
             </a>
           </div>
         </div>
