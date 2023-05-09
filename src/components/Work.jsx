@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ProjectCard from "./sub-components/ProjectCard";
+import { RiFileDownloadFill } from "react-icons/ri"
 
 function Work() {
   const [repos, setRepos] = useState([]);
@@ -10,7 +11,7 @@ function Work() {
     const { data } = await axios.get(
       "https://api.github.com/users/v4ldus/repos"
     );
-    setRepos(data.slice(0, 8));
+    setRepos(data.slice(0, 4));
   };
 
   useEffect(() => {
@@ -22,7 +23,11 @@ function Work() {
   return (
     <>
         {/* https://codepen.io/dzoni404/embed/PdZrwL?default-tab=html%2Cresult&theme-id=dark */}
-      <div className="container px-4 py-12 mx-auto">
+      <div className="container px-5 py-12 mx-auto mb-32">
+        <div className="flex">
+        <h1 className="text-3xl mb-16 lg:ml-40 font-bold md:ml-0">Personal Projects</h1>
+        <hr class="w-96 h-1 bg-green-500 mt-5 ml-3.5" />
+        </div>
           <div className="shadow-lg flex flex-wrap w-full lg:w-4/5 mx-auto">
             <img
               className="bg-cover bg-bottom border w-full md:w-1/3 h-64 md:h-auto relative -mb-5"
@@ -52,10 +57,8 @@ function Work() {
                       commemorates the capture of Kazan and Astrakhan.
                     </p>
                   </div>
-                  <div className="w-full lg:w-1/5 mt-6 lg:mt-0 lg:px-4 text-center md:text-left">
-                    <button className="bg-white hover:bg-grey-darker hover:text-white border border-solid border-grey w-1/3 lg:w-full py-2">
-                      Visit now
-                    </button>
+                  <div className="w-full lg:w-1/5 mt-6 lg:mt-0 lg:px-4 text-center text-4xl">
+                      <RiFileDownloadFill/>
                   </div>
                 </div>
               </div>
@@ -63,7 +66,8 @@ function Work() {
           </div>
       </div>
 
-      <div className="grid grid-cols-2 container max-w-screen-lg mx-auto">
+      <h2 className="text-center text-2xl font-semibold mb-10">Other projects</h2>
+      <div className="grid grid-cols-2 container max-w-screen-lg mx-auto px-2 mb-[400px]">
         {repos.map((repo) => {
           return (
             <ProjectCard
