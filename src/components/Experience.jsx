@@ -9,7 +9,7 @@ function Experience() {
           <div className="grid gap-4 mx-4 sm:grid-cols-12">
             <div className="col-span-12 sm:col-span-3">
               <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-red-700">
-                <h3 className="text-3xl font-bold">01. Experience</h3>
+                <h3 className="text-3xl font-bold"><span className="text-red-800">01.</span> Experience</h3>
                 <span className="text-sm font-bold tracking-wider uppercase">
                   Where I've worked
                 </span>

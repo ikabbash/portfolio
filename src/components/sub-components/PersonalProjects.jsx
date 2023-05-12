@@ -5,7 +5,7 @@ import { RiFileDownloadFill } from "react-icons/ri";
 function PersonalProjects() {
   return (
     <>
-      <div className="bg-red-200 p-5 rounded-md">
+      <div className="bg-red-200 p-5 rounded-md shadow-md">
         <div className="relative">
           <img
             className="object-cover rounded-lg"
@@ -27,7 +27,7 @@ function PersonalProjects() {
             MERN Stack • Redux • Azure
           </div>
           <a className="md:absolute md:mt-12 right-0 z-20 bottom-16">
-            <RiFileDownloadFill className="text-2xl transition duration-300 ease hover:text-red-700" />
+            <RiFileDownloadFill className="text-3xl transition duration-300 ease hover:text-red-700" />
           </a>
         </div>
       </div>

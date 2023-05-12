@@ -23,10 +23,10 @@ function Work() {
   return (
     <>
       {/* https://codepen.io/dzoni404/embed/PdZrwL?default-tab=html%2Cresult&theme-id=dark */}
-      <div className="container px-10 py-12 mx-auto mb-24 max-w-screen-lg">
+      <div className="container px-10 py-12 mx-auto mb-16 max-w-screen-lg scroll-mt-20" id="work">
         <div className="flex">
           <h1 className="text-3xl mb-16 font-bold">
-            Personal Projects
+            <span className="text-red-800">10.</span> Personal Projects
           </h1>
           {/* <hr className="w-32 h-1 bg-green-500 mt-5 ml-3.5" /> */}
         </div>

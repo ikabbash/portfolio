@@ -52,8 +52,8 @@ export default function () {
   return (
     <>
       {/* reference: https://www.floatui.com/components/cards */}
-      <section className="mx-auto px-6 max-w-screen-lg mb-[500px] scroll-mt-20" id="blog">
-        <h1 className="text-center text-3xl mt-40 font-bold"><span>11. </span>Latest Blog Posts</h1>
+      <section className="mx-auto px-6 max-w-screen-lg mb-[200px]" id="blog">
+        <h1 className="text-center text-3xl mt-40 font-bold"><span className="text-red-800">11. </span>Latest Blog Posts</h1>
         <div className="mt-4 grid gap-2 lg:grid-cols-3 sm:grid-cols-1 px-4 md:px-0">
         {/* <div className="flex flex-col"> */}
           {devArticles.map((key) => {

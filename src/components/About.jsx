@@ -9,8 +9,8 @@ function About() {
           
           {/* <!-- right --> */}
           <div className="my-auto flex flex-col gap-3">
-            <h1 className="text-indigo-600 font-bold text-3xl">
-              <span>00. </span>About me
+            <h1 className="font-bold text-3xl">
+              <span className="text-red-800">00. </span>About me
             </h1>
             <h1 className="text-xl font-medium">My journey</h1>
             <p className="text-gray-400 max-w-xl">

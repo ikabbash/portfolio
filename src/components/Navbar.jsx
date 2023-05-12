@@ -19,7 +19,7 @@ const Navbar = () => {
         <a className="p-4" href="#experience">
           <span className="text-red-600">01. </span>Experience
         </a>
-        <a className="p-4">
+        <a href="#work" className="p-4">
           <span className="text-red-600">10. </span>Work
         </a>
         <a href="#blog" className="p-4">
@@ -55,7 +55,7 @@ const Navbar = () => {
           <a className="text-red-600" href="#experience">01. <span className="text-white">Experience</span></a>
         </li>
         <li className="p-4">
-          <a className="text-red-600" href="#experience">10. <span className="text-white">Work</span></a>
+          <a className="text-red-600" href="#work">10. <span className="text-white">Work</span></a>
         </li>
         <li className="p-4">
           <a className="text-red-600" href="#blog">11. <span className="text-white">Blog</span></a>

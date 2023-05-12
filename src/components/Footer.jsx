@@ -38,18 +38,9 @@ function Footer() {
             </a>
           </div>
         </div>
-
-        <div className="p-4 text-center bg-neutral-700 text-neutral-200">
-          © 2023 Copyright:
-          <a
-            className="text-neutral-800 dark:text-neutral-400"
-            href="https://tailwind-elements.com/"
-          >
-            {" "}
-            Tailwind Elements
-          </a>
-        </div>
       </footer>
+      <p className="text-center mb-2">Built by Ibrahim Kabbash</p>
+      <div className="p-2 text-center bg-neutral-700 text-neutral-200"></div>
     </>
   );
 }

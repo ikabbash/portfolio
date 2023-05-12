@@ -11,7 +11,7 @@ function Hero() {
                 // https://www.npmjs.com/package/react-type-animation
               "Hello", // Types 'One'
               1000, // Waits 1s
-              "سلام عليكم", // Deletes 'One' and types 'Two'
+              "السلام عليكم", // Deletes 'One' and types 'Two'
               1000,
             ]}
             wrapper="span"
