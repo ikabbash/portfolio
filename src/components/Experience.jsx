@@ -5,7 +5,7 @@ function Experience() {
   return (
     <>
       <section className="mb-[400px] scroll-mt-16" id="experience">
-        <div className="container max-w-5xl px-4 py-12 mx-auto ">
+        <div className="container max-w-5xl md:px-4 py-12 mx-auto ">
           <div className="grid gap-4 mx-4 sm:grid-cols-12">
             <div className="col-span-12 sm:col-span-3">
               <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-red-700">

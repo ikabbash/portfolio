@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 function Hero() {
   return (
     <div className="text-black px-10">
-      <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-left flex flex-col justify-center">
+      <div className="max-w-screen-lg mt-[-96px] w-full h-screen mx-auto text-left flex flex-col justify-center sm:px-10">
         <p className="text-[#00df9a] font-bold p-2 text-lg">
           <TypeAnimation
             sequence={[

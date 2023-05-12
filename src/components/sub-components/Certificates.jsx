@@ -2,14 +2,13 @@ import React from "react";
 import {
   SiCoursera,
   SiUdacity,
-  SiKubernetes,
   SiAmazonaws,
 } from "react-icons/si";
 
 function Certificates() {
   return (
     <>
-      <div className="container max-w-6xl my-20 px-6 mx-auto">
+      <div className="container max-w-screen-lg my-20 px-6 mx-auto">
         <section className="mb-32 text-gray-800 text-center">
           <h2 className="text-3xl font-bold mb-12">
             <a
@@ -34,22 +33,6 @@ function Certificates() {
               <p className="text-gray-500">
                 AWS' fundamentals exam earned since April 2023, expires on April
                 2026
-              </p>
-            </div>
-
-            <div className="mb-12 md:mb-0">
-              <a
-                className="p-4 rounded-lg shadow-lg inline-block mb-6
-                transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-white hover:bg-gray-900"
-                href="https://kodekloud.com/certificate-verification/85E9E144F4-85E3DD34B9-85E3AE344C/"
-                target="_blank"
-              >
-                <SiKubernetes className="text-3xl" />
-              </a>
-              <h5 className="text-lg font-bold mb-4">KodeKloud CKA</h5>
-              <p className="text-gray-500">
-                Course on KodeKloud teaching Kubernetes' CKA, earned since
-                September 2022
               </p>
             </div>
 

@@ -5,7 +5,7 @@ function About() {
   return (
     <>
       <div className="px-10 mb-[400px]" id="about">
-        <div className="container max-w-screen-lg mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
+        <div className="container max-w-screen-lg mx-auto py-40 md:px-10 flex flex-col-reverse lg:flex-row items-center gap-20">
           
           {/* <!-- right --> */}
           <div className="my-auto flex flex-col gap-3">

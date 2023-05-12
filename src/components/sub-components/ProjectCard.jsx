@@ -6,7 +6,7 @@ function ProjectCard({ name, url, topics, description }) {
   return (
     // https://www.material-tailwind.com/docs/html/card
     <>
-      <div className="relative mt-3 flex ml-2 mr-2 flex-col bg-red-200 bg-clip-border text-gray-700">
+      <div className="relative mt-2 flex ml-1 mr-1 flex-col bg-red-200 bg-clip-border text-gray-700">
         <div className="p-6">
           <ImFolderOpen className="text-4xl mb-8" />
           <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
