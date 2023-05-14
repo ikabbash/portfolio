@@ -9,37 +9,37 @@ function About() {
           
           {/* <!-- right --> */}
           <div className="my-auto flex flex-col gap-3">
-            <h1 className="font-bold text-3xl">
-              <span className="text-red-800">00. </span>About me
+          <div className="text-center sm:text-left before:block before:w-24 before:h-1 before:mb-2 before:rounded-md before:dark:bg-secondary" />
+            <h1 className="font-bold text-3xl text-text1">
+              <span className="text-primary">00. </span>About me
             </h1>
-            <h1 className="text-xl font-medium">My journey</h1>
-            <p className="text-gray-400 max-w-xl">
+            <p className="text-gray-400 max-w-xl text-text2">
             I graduated from AASTMT's College of Computer Engineering in February 2023 and have
             always had a passion for DevOps. For me personally, I'm the type of person who likes
             to think of what's going on behind the scenes, how can I break a system down part
             by part and understand each one of them and their role in the system, then improve
             and automate them into something better.</p>
-            <p className="text-gray-400 max-w-xl">
+            <p className="text-gray-400 max-w-xl text-text2">
             Currently, I am fortunate enough that I started working as a Junior DevOps Engineer with
-            <a href="https://espace.com.eg/" className="text-blue-500 font-semibold hover:underline
-            transition-all duration-500 ">eSpace</a>, an exceptional software development company based
+            <a href="https://espace.com.eg/"> <span className="text-secondary font-semibold hover:underline
+            transition-all duration-500 ">eSpace</span></a>, an exceptional software development company based
             in Alexandria, Egypt.
             </p>
-            <p className="text-gray-400 max-w-xl">
+            <p className="text-gray-400 max-w-xl text-text2">
             Feel free to say hi or ask for any inquiry and I'll try my
-            best to respond as soon as possible at <a className="text-blue-500 font-semibold hover:underline
+            best to respond as soon as possible at <a className="text-secondary font-semibold hover:underline
             transition-all duration-500">i.kabbash@protonmail.ch</a>
             </p>
-            <h1 className="text-xl font-medium">Some of my recent skills: </h1>
-            <div className="grid grid-cols-2">
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-red-800" />Kubernetes</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-red-800" />Azure</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-red-800" />ArgoCD</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-red-800" />Helm</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-red-800" />AWS</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-red-800" />Azure DevOps</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-red-800" />Jenkins</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-red-800" />Terraform</span>
+            <h1 className="font-medium text-text2">Some of my recent skills: </h1>
+            <div className="grid grid-cols-2 text-text2">
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Kubernetes</span>
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Azure</span>
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />ArgoCD</span>
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Helm</span>
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />AWS</span>
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Azure DevOps</span>
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Jenkins</span>
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Terraform</span>
             </div>
           </div>
           {/* <!-- left --> */}

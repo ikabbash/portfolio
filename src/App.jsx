@@ -9,7 +9,7 @@ import Work from "./components/Work"
 function App() {
 
   return (
-    <div className="bg-color">
+    <div className="bg-background">
       <Navbar />
       <Sidebar />
       <Hero />

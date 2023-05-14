@@ -53,9 +53,12 @@ export default function () {
     <>
       {/* reference: https://www.floatui.com/components/cards */}
       <section className="mx-auto px-6 max-w-screen-lg mb-[200px]" id="blog">
-        <h1 className="text-center text-3xl mt-40 font-bold"><span className="text-red-800">11. </span>Latest Blog Posts</h1>
+        <h1 className="text-center text-3xl mt-40 font-bold text-text1">
+          <span className="text-primary">11. </span>
+          Latest Blog Posts
+        </h1>
         <div className="mt-4 grid gap-2 lg:grid-cols-3 sm:grid-cols-1 px-4 md:px-0">
-        {/* <div className="flex flex-col"> */}
+          {/* <div className="flex flex-col"> */}
           {devArticles.map((key) => {
             return (
               <Card
@@ -81,8 +84,12 @@ export default function () {
           })}
         </div>
         <div className="mt-5 text-4xl inline-flex  px-4 md:px-0">
-          <span className="text-lg py-1">Check out my other articles on Dev.to or Hashnode</span>
-            </div>
+          <span className="text-lg py-1 text-text2">
+            Check out my other articles on <a className="text-secondary font-semibold hover:underline
+            transition-all duration-500">Dev.to</a> or <a className="text-secondary font-semibold hover:underline
+            transition-all duration-500">Hashnode</a>
+          </span>
+        </div>
       </section>
     </>
   );

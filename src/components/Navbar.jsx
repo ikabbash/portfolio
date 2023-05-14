@@ -10,27 +10,27 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-16 max-w mx-auto px-4 text-gray-100 sticky top-0 z-50 bg-[#09090c] opacity-95">
+    <div className="flex justify-between items-center h-16 max-w mx-auto px-4 text-gray-100 sticky top-0 z-50 bg-background opacity-95">
       <img src={Logo} alt={"Logo400"} className="ml-10 h-10 opacity-100" />
       <ul className="hidden md:flex mr-8">
-        <a className="p-4" href="#about">
-          <span className="text-red-600">00. </span>About
+        <a className="p-4 text-text1 hover:text-primary" href="#about">
+          <span className="text-primary">00. </span>About
         </a>
-        <a className="p-4" href="#experience">
-          <span className="text-red-600">01. </span>Experience
+        <a className="p-4 text-text1 hover:text-primary" href="#experience">
+          <span className="text-primary">01. </span>Experience
         </a>
-        <a href="#work" className="p-4">
-          <span className="text-red-600">10. </span>Work
+        <a className="p-4 text-text1 hover:text-primary" href="#work">
+          <span className="text-primary">10. </span>Work
         </a>
-        <a href="#blog" className="p-4">
-          <span className="text-red-600">11. </span>Blog
+        <a className="p-4 text-text1 hover:text-primary" href="#blog">
+          <span className="text-primary">11. </span>Blog
         </a>
         <li className="p-4">
           <a
             href="#_"
-            className="rounded-md px-3.5 py-1.5 m-1 group cursor-pointer hover:bg-red-800 border-2 transition duration-300 ease border-red-800"
+            className="rounded-md px-3.5 py-1.5 m-1 group cursor-pointer hover:bg-primary border-2 transition duration-300 ease border-primary"
           >
-            <span className="text-white transition duration-300 group-hover:text-gray-900 ease">
+            <span className="text-primary transition duration-300 group-hover:text-card ease">
               Resume
             </span>
           </a>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
       {/* mobile version */}
       <div onClick={handleNav} className="block md:hidden">
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        {nav ? <AiOutlineClose className="text-secondary" size={20} /> : <AiOutlineMenu className="text-secondary" size={20} />}
       </div>
       <ul
         className={
@@ -49,23 +49,23 @@ const Navbar = () => {
         }
       >
         <li className="p-4">
-          <a className="text-red-600" href="#about">00. <span className="text-white">About</span></a>
+          <a className="text-primary" href="#about">00. <span className="text-text1 hover:text-primary">About</span></a>
         </li>
         <li className="p-4">
-          <a className="text-red-600" href="#experience">01. <span className="text-white">Experience</span></a>
+          <a className="text-primary" href="#experience">01. <span className="text-text1 hover:text-primary">Experience</span></a>
         </li>
         <li className="p-4">
-          <a className="text-red-600" href="#work">10. <span className="text-white">Work</span></a>
+          <a className="text-primary" href="#work">10. <span className="text-text1 hover:text-primary">Work</span></a>
         </li>
         <li className="p-4">
-          <a className="text-red-600" href="#blog">11. <span className="text-white">Blog</span></a>
+          <a className="text-primary" href="#blog">11. <span className="text-text1 hover:text-primary">Blog</span></a>
         </li>
         <li className="p-4 mt-1">
           <a
             href="#_"
-            className="rounded-md px-3.5 py-1.5 m-1 group cursor-pointer hover:bg-red-800 border-2 transition duration-300 ease border-red-800"
+            className="rounded-md px-3.5 py-1.5 m-1 group cursor-pointer hover:bg-primary border-2 transition duration-300 ease border-primary"
           >
-            <span className="text-white transition duration-300 group-hover:text-gray-900 ease">
+            <span className="text-primary transition duration-300 group-hover:text-card ease">
               Resume
             </span>
           </a>
