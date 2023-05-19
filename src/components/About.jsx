@@ -1,5 +1,6 @@
 import React from "react";
 import { TbArrowBadgeRight } from "react-icons/tb"
+import picture2 from "../assets/picture2.jpg"
 
 function About() {
   return (
@@ -43,16 +44,9 @@ function About() {
             </div>
           </div>
           {/* <!-- left --> */}
-          {/* <div className="relative">
-            <img
-              className="h-1/4 absolute top-0 right-0 -z-10"
-              src="dots?"
-              alt=""
-            />
-            <div className="h-full overflow-hidden">
-              <img src="the tall image" alt="" />
-            </div>
-          </div> */}
+              <img src={picture2} alt="the tall image"
+              style={{width: 400, height:550}} 
+              className="object-cover"/>
         </div>
       </div>
     </>

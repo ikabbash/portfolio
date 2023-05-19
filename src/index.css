@@ -1,6 +1,21 @@
 @tailwind base;
 html {
     scroll-behavior: smooth;
+    background-color: #020617;
+  }
+
+  .red-btn {
+    display: none;
+  }
+  .yellow-btn {
+    display: none;
+  }
+  .green-btn {
+    display: none;
+  }
+
+  .react-terminal-wrapper {
+    background-color: #0B0F21;
   }
 @tailwind components;
 @tailwind utilities;

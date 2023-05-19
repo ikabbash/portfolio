@@ -1,23 +1,18 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Blogs from "./components/Blogs"
-import Sidebar from "./components/Sidebar"
-import Footer from "./components/Footer"
-import Experience from "./components/Experience"
-import About from "./components/About"
-import Work from "./components/Work"
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Terminal from "./TerminalController"
+import Portfolio from './Portfolio'
+
 function App() {
 
   return (
     <div className="bg-background">
-      <Navbar />
-      <Sidebar />
-      <Hero />
-      <About />
-      <Experience />
-      <Work />
-      <Blogs />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path='/' element={<Portfolio />}/>
+          <Route path='/test' element={<Terminal />}/>
+        </Routes>
+      </Router>
+
     </div>
   )
 }

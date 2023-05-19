@@ -4,6 +4,14 @@ import Logo from "../assets/Logo400.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  // https://www.zalgogenerator.com/
+  // E̺̱͜ͅx̛per̖̙̭̄̓͌i̶eņ͈̦͐ͭc̮̪̋ͫe͒̔
+  // W̢̳ͫor͍̬ͧ͑k̦̖̔͆
+  // B̎́ͤl̠̏o͆̀͢g͖
+  const [CPabout, setAbout] = useState(false);
+  const [CPexperience, setExperience] = useState(false);
+  const [CPwork, setWork] = useState(false);
+  const [CPblog, setBlog] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -11,19 +19,19 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-16 max-w mx-auto px-4 text-gray-100 sticky top-0 z-50 bg-background opacity-95">
-      <img src={Logo} alt={"Logo400"} className="ml-10 h-10 opacity-100" />
+      <img src={Logo} alt={"Logo400"} className="ml-10 md:ml-20 h-10 opacity-100" />
       <ul className="hidden md:flex mr-8">
-        <a className="p-4 text-text1 hover:text-primary" href="#about">
-          <span className="text-primary">00. </span>About
+        <a className="p-4 text-text1" href="#about" onMouseEnter={() => setAbout(true)} onMouseLeave={() => setAbout(false)}>
+          <span className="text-primary">00. </span> {CPabout ?  <span>A͔͜ͅb͔̕o̭̰̫͑ͨ̅u͚̝͙͗ͩ̆t͟</span> : <span>About</span>} 
         </a>
-        <a className="p-4 text-text1 hover:text-primary" href="#experience">
-          <span className="text-primary">01. </span>Experience
+        <a className="p-4 text-text1" href="#experience" onMouseEnter={() => setExperience(true)} onMouseLeave={() => setExperience(false)}>
+          <span className="text-primary">01. </span> {CPexperience ?  <span>E̺̱͜ͅx̛per̖̙̭̄̓͌i̶eņ͈̦͐ͭc̮̪̋ͫe͒̔</span> : <span>Experience</span>} 
         </a>
-        <a className="p-4 text-text1 hover:text-primary" href="#work">
-          <span className="text-primary">10. </span>Work
+        <a className="p-4 text-text1" href="#work" onMouseEnter={() => setWork(true)} onMouseLeave={() => setWork(false)}>
+          <span className="text-primary">10. </span> {CPwork ?  <span>W̢̳ͫor͍̬ͧ͑k̦̖̔͆</span> : <span>Work</span>} 
         </a>
-        <a className="p-4 text-text1 hover:text-primary" href="#blog">
-          <span className="text-primary">11. </span>Blog
+        <a className="p-4 text-text1" href="#blog" onMouseEnter={() => setBlog(true)} onMouseLeave={() => setBlog(false)}>
+          <span className="text-primary">11. </span> {CPblog ?  <span>B̎́ͤl̠̏o͆̀͢g͖</span> : <span>Blog</span>} 
         </a>
         <li className="p-4">
           <a
@@ -49,16 +57,24 @@ const Navbar = () => {
         }
       >
         <li className="p-4">
-          <a className="text-primary" href="#about">00. <span className="text-text1 hover:text-primary">About</span></a>
+          <a className="text-text1" href="#about" onMouseEnter={() => setAbout(true)} onMouseLeave={() => setAbout(false)}>
+          <span className="text-primary">00. </span> {CPabout ?  <span>A͔͜ͅb͔̕o̭̰̫͑ͨ̅u͚̝͙͗ͩ̆t͟</span> : <span>About</span>}
+          </a>
         </li>
         <li className="p-4">
-          <a className="text-primary" href="#experience">01. <span className="text-text1 hover:text-primary">Experience</span></a>
+          <a className="text-text1" href="#experience" onMouseEnter={() => setExperience(true)} onMouseLeave={() => setExperience(false)}>
+          <span className="text-primary">00. </span> {CPexperience ?  <span>E̺̱͜ͅx̛per̖̙̭̄̓͌i̶eņ͈̦͐ͭc̮̪̋ͫe͒̔</span> : <span>Experience</span>}
+          </a>
         </li>
         <li className="p-4">
-          <a className="text-primary" href="#work">10. <span className="text-text1 hover:text-primary">Work</span></a>
+          <a className="text-text1" href="#work" onMouseEnter={() => setWork(true)} onMouseLeave={() => setWork(false)}>
+          <span className="text-primary">00. </span> {CPwork ?  <span>W̢̳ͫor͍̬ͧ͑k̦̖̔͆</span> : <span>Work</span>}
+          </a>
         </li>
         <li className="p-4">
-          <a className="text-primary" href="#blog">11. <span className="text-text1 hover:text-primary">Blog</span></a>
+          <a className="text-text1" href="#blog" onMouseEnter={() => setBlog(true)} onMouseLeave={() => setBlog(false)}>
+          <span className="text-primary">00. </span> {CPblog ?  <span>B̎́ͤl̠̏o͆̀͢g͖</span> : <span>Blog</span>}
+          </a>
         </li>
         <li className="p-4 mt-1">
           <a
