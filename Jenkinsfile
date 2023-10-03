@@ -4,10 +4,12 @@ pipeline {
     }
     
     stages {
+
         stage('Docker build') {
             steps {
-                sh 'ls -la'
+                sh 'docker build -t portfolio .'
             }
         }
+        
     }
 }
