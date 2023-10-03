@@ -37,9 +37,7 @@ pipeline {
 
         stage('Deploy Application') {
             steps {
-                sh 'sudo kubectl apply -f k8s-manifests/service.yaml'
-                sh 'sudo kubectl apply -f k8s-manifests/virtualserver.yaml'
-                sh 'sudo kubectl apply -f k8s-manifests/deployment.yaml'
+                sh 'kubectl rollout restart deployment -n react react-app-deployment'
             }
         }
     }
