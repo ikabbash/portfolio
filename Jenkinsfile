@@ -9,10 +9,10 @@ pipeline {
         stage('SonarQube Analysis (SAST)') {
             steps {
                 sh "sonar-scanner \
-                -Dsonar.projectKey=portfolio \
-                -Dsonar.sources=. \
-                -Dsonar.host.url=http://sonarqube-devsecops.com \
-                -Dsonar.token=sqp_772016229b5f9d55fb71d392ca91cc65be3b9ad4"
+                        -Dsonar.projectKey=portfolio-project \
+                        -Dsonar.sources=. \
+                        -Dsonar.host.url=http://sonarqube-devsecops.com \
+                        -Dsonar.token=sqp_9c20c1a6d834d666ea40670147ed6db4176df96b"
             }
         }
 
