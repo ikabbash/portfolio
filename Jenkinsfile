@@ -3,7 +3,6 @@ pipeline {
         label 'azure-vm'
     }
     
-
     stages {
 
         stage('SonarQube Analysis (SAST)') {
