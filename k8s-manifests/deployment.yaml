@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: react-app-container
-          image: portfolio
+          image: localhost:5000/portfolio:latest
           ports:
             - containerPort: 80
