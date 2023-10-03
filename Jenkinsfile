@@ -8,7 +8,7 @@ pipeline {
 
         stage('SonarQube Analysis (SAST)') {
             steps {
-                sh ".sonar/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner \
+                sh "/home/azureuser/.sonar/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner \
                         -Dsonar.projectKey=portfolio-project \
                         -Dsonar.sources=. \
                         -Dsonar.host.url=http://sonarqube-devsecops.com \
