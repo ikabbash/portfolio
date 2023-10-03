@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh "/home/azureuser/.sonar/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner \
                         -Dsonar.projectKey=portfolio-project \
-                        -Dsonar.sources=. \
+                        -Dsonar.sources=/home/azureuser/workspace/DevSecOps\ Pipeline \
                         -Dsonar.host.url=http://sonarqube-devsecops.com \
                         -Dsonar.token=sqp_9c20c1a6d834d666ea40670147ed6db4176df96b"
             }
