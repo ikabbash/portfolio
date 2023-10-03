@@ -9,7 +9,7 @@ function Work() {
   // fetch
   const getRepos = async () => {
     const { data } = await axios.get(
-      "https://api.github.com/users/v4ldus/repos"
+      "https://api.github.com/users/ikabbash/repos"
     );
     setRepos(data.slice(0, 4));
   };
