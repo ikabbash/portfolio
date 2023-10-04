@@ -18,9 +18,7 @@ pipeline {
         stage('Vulnerability Scan') {
             steps {
                 //parallel(
-                    "Dependency Scan": {
                         dependencyCheck additionalArguments: '--format HTML', odcInstallation: 'DP-Check'
-                    }
                     // "Image Scan": {
                     //     sh ""
                     // }
