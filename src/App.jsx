@@ -2,11 +2,6 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Terminal from "./TerminalController"
 import Portfolio from './Portfolio'
 
-// lines that should be deleted
-import { useEffect, useState } from 'react'
-import something from 'non-existent'
-const password = "haha_password"
-
 function App() {
 
   return (
