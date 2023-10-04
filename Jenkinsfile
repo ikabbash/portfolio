@@ -17,17 +17,17 @@ pipeline {
 
         stage('Vulnerability Scan') {
             steps {
-                parallel(
+                //parallel(
                     "Dependency Scan": {
                         dependencyCheck additionalArguments: '--format HTML', odcInstallation: 'DP-Check'
                     }
-                    "Image Scan": {
-                        sh ""
-                    }
-                    "OPA Conftest": {
-                        sh ""
-                    }
-                )
+                    // "Image Scan": {
+                    //     sh ""
+                    // }
+                    // "OPA Conftest": {
+                    //     sh ""
+                    // }
+                //)
             }
         }
 
