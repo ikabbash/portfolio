@@ -17,15 +17,17 @@ pipeline {
 
         stage('Vulnerability Scan') {
             steps {
-                //parallel(
+                parallel(
+                    "Dependency Scan": {
                         dependencyCheck additionalArguments: '--format HTML', odcInstallation: 'DP-Check'
-                    // "Image Scan": {
-                    //     sh ""
-                    // }
+                    }
+                    "Image Scan": {
+                        sh "bash /home/azureuser/devsecops-tools/trivy-image-scan.sh"
+                    }
                     // "OPA Conftest": {
                     //     sh ""
                     // }
-                //)
+                )
             }
         }
 
