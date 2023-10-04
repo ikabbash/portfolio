@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('Vulnerability Scan') {
+        stage('Vulnerability Scan - Docker') {
             steps {
                 parallel(
                     "Dependency Scan": {
@@ -51,9 +51,19 @@ pipeline {
             }
         }
 
+        stage('Vulnerability Scan - Kubernetes') {
+            steps {
+                parallel(
+                    "Kubesec Scan": {
+                        sh "bash /home/azureuser/devsecops-tools/kubesec-scan.sh"
+                    }
+                )
+            }
+        }
+
         stage('Deploy Application') {
             steps {
-                sh 'kubectl rollout restart deployment -n react react-app-deployment'
+                sh 'sudo kubectl rollout restart deployment -n react react-app-deployment'
             }
         }
     }
