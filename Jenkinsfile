@@ -5,7 +5,7 @@ pipeline {
     
     stages {
 
-        stage('SonarQube Analysis (SAST)') {
+        stage('SonarQube Analysis - SAST') {
             steps {
                 sh "/home/azureuser/.sonar/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner \
                         -Dsonar.projectKey=portfolio-project \
@@ -24,9 +24,9 @@ pipeline {
                     "Image Scan": {
                         sh "bash /home/azureuser/devsecops-tools/trivy-image-scan.sh"
                     },
-                    // "OPA Conftest": {
-                    //     sh ""
-                    // }
+                    "OPA Conftest": {
+                        sh "conftest test --policy /home/azureuser/devsecops-tools/docker.rego /home/azureuser/workspace/DevSecOps/Dockerfile"
+                    }
                 )
             }
         }
@@ -53,17 +53,19 @@ pipeline {
 
         stage('Vulnerability Scan - Kubernetes') {
             steps {
-                parallel(
-                    "Kubesec Scan": {
-                        sh "bash /home/azureuser/devsecops-tools/kubesec-scan.sh"
-                    }
-                )
+                sh "bash /home/azureuser/devsecops-tools/kubesec-scan.sh"
             }
         }
 
         stage('Deploy Application') {
             steps {
                 sh 'sudo kubectl rollout restart deployment -n react react-app-deployment'
+            }
+        }
+
+        stage('OWASP ZAP - DAST') {
+            steps {
+                sh 'docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-baseline.py -t http://ikabbash.com -r report.html'
             }
         }
     }
