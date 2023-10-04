@@ -65,7 +65,7 @@ pipeline {
 
         stage('OWASP ZAP - DAST') {
             steps {
-                sh 'docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-baseline.py -t http://ikabbash.com -r report.html'
+                sh 'docker run --network host -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-baseline.py -t http://ikabbash.com -r report.html'
             }
         }
     }
