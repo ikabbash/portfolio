@@ -11,7 +11,7 @@ pipeline {
                         -Dsonar.projectKey=portfolio-project \
                         -Dsonar.sources=/home/azureuser/workspace/DevSecOps \
                         -Dsonar.host.url=http://sonarqube-devsecops.com \
-                        -Dsonar.token=sqp_9c20c1a6d834d666ea40670147ed6db4176df96b"
+                        -Dsonar.token=sqp_245fced3fa8542bf7f2bdf63021ae3193b233290"
             }
         }
 
