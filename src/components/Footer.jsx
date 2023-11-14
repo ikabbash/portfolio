@@ -39,7 +39,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <p className="text-center mb-2 text-primary">Built by Ibrahim Kabbash</p>
+      <p className="text-center mb-2 text-primary">Built and designed by Ibrahim Kabbash</p>
       <div className="p-2 text-center bg-card text-text1"></div>
     </>
   );

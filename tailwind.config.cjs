@@ -11,7 +11,7 @@ module.exports = {
       text2: '#aeb4c8 ',
       text3: '#8892b0',
       primary: '#b52626',
-      secondary: '#00df9a', // maybe use turqouise instead?
+      secondary: '#00df9a',
       card: '#0B0F21',
     },
     extend: {},

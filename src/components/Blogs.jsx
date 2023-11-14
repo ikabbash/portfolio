@@ -83,11 +83,14 @@ export default function () {
             // );
           })}
         </div>
-        <div className="mt-5 text-4xl inline-flex  px-4 md:px-0">
+        <div className="mt-5 text-4xl flex px-4 md:px-0 justify-center  ">
           <span className="text-lg py-1 text-text2">
             Check out my other articles on <a className="text-secondary font-semibold hover:underline
-            transition-all duration-500">Dev.to</a> or <a className="text-secondary font-semibold hover:underline
-            transition-all duration-500">Hashnode</a>
+            transition-all duration-500">Dev.to</a><a>, </a>
+            <a className="text-secondary font-semibold hover:underline
+            transition-all duration-500">Medium</a><a> or </a>
+            <a className="text-secondary font-semibold hover:underline
+            transition-all duration-500"> Hashnode</a>
           </span>
         </div>
       </section>

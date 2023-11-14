@@ -1,6 +1,7 @@
 import React from "react";
 // import { FiYoutube, FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi";
 import { SiLinkedin, SiGithub, SiDevdotto, SiHashnode } from "react-icons/si";
+import { FaMedium } from "react-icons/fa6"
 
 function Sidebar() {
   return (
@@ -19,6 +20,10 @@ function Sidebar() {
 
       <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
         <SiHashnode />
+      </a>
+
+      <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
+        <FaMedium />
       </a>
 
       <a href="#" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">

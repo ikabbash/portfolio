@@ -26,7 +26,9 @@ function PersonalProjects() {
           <div className="md:absolute md:mt-12 right-0 z-20 bottom-24 text-text3">
             MERN Stack • Redux • Azure • Terraform
           </div>
-          <a className="md:absolute md:mt-12 right-0 z-20 bottom-16">
+          <a className="md:absolute md:mt-12 right-0 z-20 bottom-16"
+          target="_blank"
+          href="https://www.canva.com/design/DAFz4GKnduQ/Bsc3sCyUlHibSgl0YXsdSg/view?utm_content=DAFz4GKnduQ&utm_campaign=designshare&utm_medium=link&utm_source=viewer">
             <RiFileDownloadFill className="text-3xl transition duration-300 ease hover:text-secondary text-text2" />
           </a>
         </div>

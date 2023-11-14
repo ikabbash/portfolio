@@ -1,6 +1,6 @@
 import React from "react";
 import { TbArrowBadgeRight } from "react-icons/tb"
-import picture2 from "../assets/picture2.jpg"
+import picture3 from "../assets/about.png"
 
 function About() {
   return (
@@ -29,7 +29,7 @@ function About() {
             <p className="text-gray-400 max-w-xl text-text2">
             Feel free to say hi or ask for any inquiry and I'll try my
             best to respond as soon as possible at <a className="text-secondary font-semibold hover:underline
-            transition-all duration-500">i.kabbash@protonmail.ch</a>
+            transition-all duration-500">ikabbash@protonmail.ch</a>
             </p>
             <h1 className="font-medium text-text2">Some of my recent skills: </h1>
             <div className="grid grid-cols-2 text-text2">
@@ -41,12 +41,15 @@ function About() {
               <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Azure DevOps</span>
               <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Jenkins</span>
               <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Terraform</span>
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Prometheus</span>
+              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />DevSecOps</span>
             </div>
           </div>
           {/* <!-- left --> */}
-              <img src={picture2} alt="the tall image"
-              style={{width: 400, height:550}} 
-              className="object-cover"/>
+              <img src={picture3} alt="Flight"
+              style={{width: 500, height:550}} 
+              // was object-cover
+              className="object-contain"/>
         </div>
       </div>
     </>

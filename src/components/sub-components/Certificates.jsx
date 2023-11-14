@@ -65,7 +65,12 @@ function Certificates() {
                 Professional certificate on Coursera earned since September 2020
               </p>
             </div>
+
           </div>
+
+          <a className="py-3 px-4 rounded-md border-2 transition duration-300 ease group hover:border-secondary ease-in-out"
+          href="https://www.linkedin.com/in/ibrahim-k-426770ab/details/certifications/"
+          target="_blank"><div className="inline-block mt-16 text-lg transition ease-in-out group-hover:text-secondary">View More</div></a>
         </section>
       </div>
     </>

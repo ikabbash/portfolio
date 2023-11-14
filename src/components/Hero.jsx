@@ -13,6 +13,8 @@ function Hero() {
               1000, // Waits 1s
               "السلام عليكم", // Deletes 'One' and types 'Two'
               1000,
+              "やあ",
+              1000
             ]}
             wrapper="span"
             cursor={true}
@@ -29,7 +31,7 @@ function Hero() {
           </p>
         </div>
         <p className="md:text-xl text-lg font-bold text-gray-500 text-text2">
-          Infrastructure · Operations · Cloud Management · Cybersecurity
+          Infrastructure · Operations · Cloud Management · Security
         </p>
       </div>
     </div>
