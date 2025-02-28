@@ -44,7 +44,7 @@ export default function () {
 
   useEffect(() => {
     getDevDotTo();
-    getHashnode();
+    //getHashnode();
   }, []);
 
   // console.log(hashArticles)

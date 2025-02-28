@@ -1,5 +1,4 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Terminal from "./TerminalController"
 import Portfolio from './Portfolio'
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Portfolio />}/>
-          <Route path='/test' element={<Terminal />}/>
         </Routes>
       </Router>
 

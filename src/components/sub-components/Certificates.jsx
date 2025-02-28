@@ -2,7 +2,7 @@ import React from "react";
 import {
   SiCoursera,
   SiUdacity,
-  SiAmazonaws,
+  SiAmazonwebservices,
 } from "react-icons/si";
 
 function Certificates() {
@@ -27,7 +27,7 @@ function Certificates() {
                 href="https://www.credly.com/badges/f3c433e8-28c8-4466-8b6b-21402ebeecde/linked_in_profile"
                 target="_blank"
               >
-                <SiAmazonaws className="text-3xl" />
+                <SiAmazonwebservices className="text-3xl" />
               </a>
               <h5 className="text-lg font-bold mb-4">AWS Cloud Practitioner</h5>
               <p>
