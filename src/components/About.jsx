@@ -12,7 +12,7 @@ function About() {
           <div className="my-auto flex flex-col gap-3">
           <div className="text-center sm:text-left before:block before:w-24 before:h-1 before:mb-2 before:rounded-md before:dark:bg-secondary" />
             <h1 className="font-bold text-3xl text-text1">
-              <span className="text-primary">00. </span>About me
+              <span className="text-primary">00. </span>About
             </h1>
             <p className="text-gray-400 max-w-xl text-text2">
             I graduated from AASTMT's College of Computer Engineering in February 2023 and have
@@ -21,7 +21,7 @@ function About() {
             by part and understand each one of them and their role in the system, then improve
             and automate them into something better.</p>
             <p className="text-gray-400 max-w-xl text-text2">
-            Currently, I am fortunate enough that I started working as a Junior DevOps Engineer with
+            Currently, I am fortunate enough that I started working as a DevOps Engineer with
             <a href="https://espace.com.eg/"> <span className="text-secondary font-semibold hover:underline
             transition-all duration-500 ">eSpace</span></a>, an exceptional software development company based
             in Alexandria, Egypt.
@@ -29,7 +29,7 @@ function About() {
             <p className="text-gray-400 max-w-xl text-text2">
             Feel free to say hi or ask for any inquiry and I'll try my
             best to respond as soon as possible at <a className="text-secondary font-semibold hover:underline
-            transition-all duration-500">ikabbash@protonmail.ch</a>
+            transition-all duration-500">ikabbash@proton.me</a>
             </p>
             <h1 className="font-medium text-text2">Some of my recent skills: </h1>
             <div className="grid grid-cols-2 text-text2">
