@@ -57,7 +57,7 @@ function Certificates() {
               className="flex justify-between items-center p-2 px-4 rounded-md transition-all duration-200 hover:bg-card hover:shadow-md"
             >
               <h5 className="text-base text-text2 font-semibold">AWS: Certified Cloud Practitioner</h5>
-              <p className="text-sm text-text3">Apr 2023Z</p>
+              <p className="text-sm text-text3">Apr 2023</p>
             </a>
 
             <a 
