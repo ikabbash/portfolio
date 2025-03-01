@@ -14,19 +14,19 @@ function About() {
             <h1 className="font-bold text-3xl text-text1">
               <span className="text-primary">00. </span>About
             </h1>
-            <p className="text-gray-400 max-w-xl text-text2">
+            <p className="max-w-xl text-text2">
             I graduated from AASTMT's College of Computer Engineering in February 2023 and have
             always had a passion for DevOps. For me personally, I'm the type of person who likes
             to think of what's going on behind the scenes, how can I break a system down part
             by part and understand each one of them and their role in the system, then improve
             and automate them into something better.</p>
-            <p className="text-gray-400 max-w-xl text-text2">
+            <p className="max-w-xl text-text2">
             Currently, I am fortunate enough that I started working as a DevOps Engineer with
-            <a href="https://espace.com.eg/"> <span className="text-secondary font-semibold hover:underline
+            <a href="https://espace.com.eg/" target="_blank"> <span className="text-secondary font-semibold hover:underline
             transition-all duration-500 ">eSpace</span></a>, an exceptional software development company based
             in Alexandria, Egypt.
             </p>
-            <p className="text-gray-400 max-w-xl text-text2">
+            <p className="max-w-xl text-text2">
             Feel free to say hi or ask for any inquiry and I'll try my
             best to respond as soon as possible at <a className="text-secondary font-semibold hover:underline
             transition-all duration-500">ikabbash@proton.me</a>

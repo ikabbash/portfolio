@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 function Card({ url, image_url, date, title, tags }) {
   return (
     <>
-      <article className="max-w-md mx-auto mt-6 shadow-lg border rounded-md duration-300 hover:shadow-sm bg-card">
+      <article className="max-w-md mx-auto mt-6 shadow-lg border rounded-md duration-300 hover:shadow-sm bg-card hover:bg-background">
         <a href={url} target="_blank">
           <img
             src={image_url}
@@ -12,9 +12,9 @@ function Card({ url, image_url, date, title, tags }) {
             className="w-full h-48 rounded-t-md object-cover"
           />
           <div className="pt-3 ml-4 mr-2 mb-3">
-            <h3 className="text-xl text-text1">{title}</h3>
-            <p className="text-gray-400 text-sm mt-1 ml-1 text-text2">{dayjs(date).format("MM/DD/YYYY")}</p>
-            <div className="text-sm mt-2 text-text3">
+            <h5 className="text-l text-text1 font-semibold line-clamp-2">{title}</h5>
+            {/* Hashtags */}
+            {/* <div className="text-sm mt-2 text-text3">
               {tags.map((tag) => {
                 return (
                   <p
@@ -25,7 +25,12 @@ function Card({ url, image_url, date, title, tags }) {
                   </p>
                 );
               })}
-            </div>
+            </div> */}
+            <div className="mt-4 text-right">
+            <span className="text-sm text-text2">
+              {dayjs(date).format("MM/DD/YYYY")}
+            </span>
+          </div>
           </div>
         </a>
       </article>

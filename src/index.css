@@ -8,6 +8,7 @@
   --color-secondary: #00df9a;
   --color-card: #0B0F21;
 }
+
 html {
     scroll-behavior: smooth;
     background-color: #020617;
