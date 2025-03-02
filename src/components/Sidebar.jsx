@@ -6,7 +6,7 @@ import { FaMedium } from "react-icons/fa6"
 function Sidebar() {
   return (
     // reference: https://www.kindacode.com/article/tailwind-css-how-to-create-a-sticky-social-sharing-bar/
-    <div className="fixed left-0 bottom-1/4 z-50 px-5 bg-transparent flex-col space-y-4 text-2xl ml-6 hidden xl:flex">
+    <div className="fixed left-0 top-1/2 -translate-y-1/2 z-50 px-5 bg-transparent flex-col space-y-4 text-2xl ml-6 hidden xl:flex">
       {/* reminder: maybe change xl:flex on above element when hiding the sidebar */}
       <div className="h-[100px] ml-2.5 bg-text2 w-[2px]"></div>
 

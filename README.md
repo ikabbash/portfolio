@@ -7,7 +7,7 @@
 - [ ] Rework About section
 - [ ] Rework projects section
 - [ ] Update text
-- [ ] Improve navbar
+- [x] Improve navbar
 
 ## References
 - https://apidocs.hashnode.com/#definition-Post
