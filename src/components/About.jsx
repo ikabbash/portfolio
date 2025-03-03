@@ -1,55 +1,88 @@
 import React from "react";
-import { TbArrowBadgeRight } from "react-icons/tb"
-import picture3 from "../assets/about.png"
 
 function About() {
   return (
     <>
-      <div className="px-10 mb-[400px]" id="about">
-        <div className="container max-w-screen-lg mx-auto py-40 md:px-10 flex flex-col-reverse lg:flex-row items-center gap-20">
-          
-          {/* <!-- right --> */}
+      <div className="mb-[400px]" id="about">
+        <div className="container max-w-5xl mx-auto py-40 px-4 md:px-10 flex flex-col-reverse lg:flex-row items-center gap-20">
           <div className="my-auto flex flex-col gap-3">
-          <div className="text-center sm:text-left before:block before:w-24 before:h-1 before:mb-2 before:rounded-md before:dark:bg-secondary" />
-            <h1 className="font-bold text-3xl text-text1">
+          {/* Bar and Header container */}
+          <div className="flex flex-col items-center sm:items-start">
+            {/* Bar */}
+            <div className="w-24 h-1 mb-4 rounded-md bg-secondary" />
+            {/* Header */}
+            <h1 className="font-bold text-3xl text-text1 mb-4">
               <span className="text-primary">00. </span>About
             </h1>
-            <p className="max-w-xl text-text2">
-            I graduated from AASTMT's College of Computer Engineering in February 2023 and have
-            always had a passion for DevOps. For me personally, I'm the type of person who likes
-            to think of what's going on behind the scenes, how can I break a system down part
-            by part and understand each one of them and their role in the system, then improve
-            and automate them into something better.</p>
-            <p className="max-w-xl text-text2">
-            Currently, I am fortunate enough that I started working as a DevOps Engineer with
-            <a href="https://espace.com.eg/" target="_blank"> <span className="text-secondary font-semibold hover:underline
-            transition-all duration-500 ">eSpace</span></a>, an exceptional software development company based
-            in Alexandria, Egypt.
-            </p>
-            <p className="max-w-xl text-text2">
-            Feel free to say hi or ask for any inquiry and I'll try my
-            best to respond as soon as possible at <a className="text-secondary font-semibold hover:underline
-            transition-all duration-500">ikabbash@proton.me</a>
-            </p>
-            <h1 className="font-medium text-text2">Some of my recent skills: </h1>
-            <div className="grid grid-cols-2 text-text2">
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Kubernetes</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Azure</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />ArgoCD</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Helm</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />AWS</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Azure DevOps</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Jenkins</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Terraform</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />Prometheus</span>
-              <span className="flex items-center"><TbArrowBadgeRight className="text-md mr-1 text-primary" />DevSecOps</span>
+          </div>
+
+            {/* Content Box */}
+            <div className="bg-card rounded-lg shadow-lg p-6 relative">
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <p className="text-text2 leading-relaxed">
+                    I'm a DevOps Engineer driven by self-learning and a constant curiosity
+                    to explore new technologies, tools, and methodologies. I enjoy diving
+                    deep into systems, understanding how they work, and finding ways to improve them.
+                    This passion extends to troubleshooting challenges, optimizing workflows, and
+                    building automated solutions that enhance efficiency and reliability.
+                    I'm always looking for ways to push the boundaries of what's possible.
+                  </p>
+
+                  <p className="text-text2 leading-relaxed">
+                    I'm especially interested in DevSecOps, exploring ways to integrate security
+                    into automation and infrastructure. I'm also interested in MLOps,
+                    learning about deploying and managing machine learning models.
+                  </p>
+
+                  <p className="text-text2 leading-relaxed">
+                    You can reach out to me at{" "}
+                    <a
+                      href="mailto:jane.doe@example.com"
+                      className="text-primary hover:underline font-medium"
+                    >
+                      ikabbash@proton.me
+                    </a>{" "}
+                    for inquiries.
+                  </p>
+                </div>
+
+                {/* Skills Section */}
+                <div>
+                  <h3 className="text-xl font-semibold text-text2 mb-4">
+                    Skills
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {[
+                      "Kubernetes",
+                      "Docker",
+                      "Azure",
+                      "Helm",
+                      "ArgoCD",
+                      "Azure DevOps",
+                      "Prometheus",
+                      "AWS",
+                      "AI",
+                      "DevSecOps",
+                      "Terraform",
+                      "GCP",
+                      "Jenkins",
+                    ].map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-4 py-2 bg-background text-text3 rounded-lg text-sm font-medium shadow-sm"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Decorative corner accent */}
+              <div className="absolute bottom-0 right-0 w-12 h-12 border-b-1 border-r-1 border-primary rounded-br-lg translate-x-1 translate-y-1"></div>
             </div>
           </div>
-          {/* <!-- left --> */}
-              <img src={picture3} alt="Flight"
-              style={{width: 500, height:550}} 
-              // was object-cover
-              className="object-contain"/>
         </div>
       </div>
     </>
