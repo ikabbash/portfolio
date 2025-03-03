@@ -63,7 +63,7 @@ export default function () {
           Latest Blog Posts
         </h1>
         </div>
-        <div className="mt-4 grid gap-2 lg:grid-cols-3 sm:grid-cols-1 gap-x-4 px-4 md:px-0">
+        <div className="mt-4 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-0">
           {/* Dev.to */}
           {/* {devArticles.map((key) => {
             return (
@@ -73,7 +73,6 @@ export default function () {
                 title={key.title}
                 image_url={key.cover_image}
                 date={key.created_at}
-                tags={key.tag_list}
               />
             );
           })} */}
@@ -93,7 +92,7 @@ export default function () {
           })}
 
         </div>
-        <div className="mt-5 text-4xl flex px-4 md:px-0 justify-center  ">
+        <div className="mt-5 text-4xl flex px-4 md:px-0 justify-center">
           <span className="text-lg py-1 text-text2">
             Check out my other articles on{" "}
             <a
