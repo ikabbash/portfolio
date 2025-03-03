@@ -9,11 +9,11 @@ function Hero() {
           <TypeAnimation
             sequence={[
                 // https://www.npmjs.com/package/react-type-animation
-              "Hello", // Types 'One'
+              "Greetings", // Types 'One'
               1000, // Waits 1s
               "السلام عليكم", // Deletes 'One' and types 'Two'
               1000,
-              "やあ",
+              "こんにちは",
               1000
             ]}
             wrapper="span"
@@ -27,11 +27,11 @@ function Hero() {
         </h1>
         <div className="flex">
           <p className="md:text-3xl sm:text-2xl text-2xl font-bold py-2 text-text2">
-            I'm a DevOps Engineer and I am dedicated to driving innovation through technology and collaboration
+            I'm a DevOps Engineer focused on streamlining operations and building resilient, automated systems.
           </p>
         </div>
-        <p className="md:text-xl text-lg font-bold text-gray-500 text-text2">
-          Infrastructure · Operations · Cloud Management · Security
+        <p className="md:text-xl text-lg font-bold text-text2">
+          Infrastructure · Operations · Cloud Management · Cybersecurity · Artificial Intelligence
         </p>
       </div>
     </div>

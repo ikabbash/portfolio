@@ -56,11 +56,13 @@ export default function () {
   return (
     <>
       {/* reference: https://www.floatui.com/components/cards */}
-      <section className="mx-auto px-6 max-w-screen-lg mb-[200px]" id="blog">
-        <h1 className="text-center text-3xl mt-40 font-bold text-text1">
+      <section className="mx-auto px-4 max-w-screen-lg mb-[200px]" id="blog">
+      <div className="mt-4 before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-secondary">
+        <h1 className="text-center md:text-left text-3xl font-bold text-text1">
           <span className="text-primary">11. </span>
           Latest Blog Posts
         </h1>
+        </div>
         <div className="mt-4 grid gap-2 lg:grid-cols-3 sm:grid-cols-1 gap-x-4 px-4 md:px-0">
           {/* Dev.to */}
           {/* {devArticles.map((key) => {

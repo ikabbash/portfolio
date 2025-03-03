@@ -7,10 +7,15 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
-    <div className="flex justify-between items-center h-16 max-w mx-auto px-4 text-gray-100 sticky top-0 py-10 z-50 bg-background opacity-95 backdrop-blur-3xl">
-      <img src={Logo} alt={"Logo400"} className="ml-10 md:ml-30 h-14 opacity-100"/>
+    <div className="flex justify-between items-center h-16 max-w mx-auto px-4 text-text1 text-lg font-semibold sticky top-0 py-10 z-50 bg-background opacity-95 backdrop-blur-3xl">
+      <button onClick={scrollToTop}>
+        <img src={Logo} alt={"Logo400"} className="ml-10 md:ml-30 h-14 opacity-100"/>
+      </button>
       <ul className="hidden md:flex mr-30">
         <a className="my-4 text-text1 ml-10 group" href="#about">
           <span className="text-primary">00. </span> <span className="group-hover:underline">About</span> 
@@ -37,15 +42,13 @@ const Navbar = () => {
       </ul>
 
       {/* mobile version */}
-      <div onClick={handleNav} className="block md:hidden">
-        {nav ? <AiOutlineClose className="text-secondary" size={20} /> : <AiOutlineMenu className="text-secondary" size={20} />}
+      <div onClick={handleNav} className="block md:hidden mr-6">
+        {nav ? <AiOutlineClose className="text-secondary" size={25} /> : <AiOutlineMenu className="text-secondary" size={25} />}
       </div>
       <ul
-        className={
-          nav
-            ? "fixed left-0 top-0 w-[60%] h-full bg-[#09090c] ease-in-out duration-500"
-            : "ease-in-out duration-500 fixed left-[-100%] flex-col"
-        }
+        className={`fixed left-0 top-0 w-[50%] sm:w-[60%] h-screen bg-background backdrop-blur-3xl pt-16 px-6 ease-in-out duration-500 ${
+          nav ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
         <li className="p-4">
           <a className="text-text1 group" href="#about">

@@ -9,10 +9,10 @@ function ProjectCard({ name, url, topics, description }) {
       <div className="relative mt-2 flex ml-1 mr-1 flex-col bg-card bg-clip-border text-gray-700">
         <div className="p-6">
           <ImFolderOpen className="text-4xl mb-8 text-secondary" />
-          <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-text1 antialiased">
+          <h5 className="mb-2 block font-sans text-lg font-semibold leading-snug tracking-normal text-text1 antialiased">
             {name}
           </h5>
-          <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased text-text2">
+          <p className="block font-sans text-sm font-light leading-relaxed antialiased text-text2">
             {description}
           </p>
         </div>
