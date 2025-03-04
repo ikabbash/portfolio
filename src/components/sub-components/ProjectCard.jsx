@@ -1,34 +1,28 @@
 import React from "react";
-import { ImFolderOpen } from "react-icons/im"
+import { FaExternalLinkAlt } from "react-icons/fa";
 
-function ProjectCard({ name, url, topics, description }) {
-    
+function ProjectCard({ name, url, description }) {
   return (
-    // https://www.material-tailwind.com/docs/html/card
-    <>
-      <div className="relative mt-2 flex ml-1 mr-1 flex-col bg-card bg-clip-border text-gray-700">
-        <div className="p-6">
-          <ImFolderOpen className="text-4xl mb-8 text-secondary" />
-          <h5 className="mb-2 block font-sans text-lg font-semibold leading-snug tracking-normal text-text1 antialiased">
-            {name}
-          </h5>
-          <p className="block font-sans text-sm font-light leading-relaxed antialiased text-text2">
-            {description}
-          </p>
-        </div>
-        <div className="p-6 pt-0">
-          <a
-            className="font-medium text-text3"
-            href="#"
-          >
-            <p
-              className="inline-flex"
-            > {topics}
-            </p>
-          </a>
-        </div>
+    <a
+      href={url}
+      target="_blank"
+      className="relative flex flex-col bg-card bg-clip-border p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90"
+    >
+      {/* External Link Icon Moved to Top Right */}
+      <div className="absolute top-4 right-4 text-secondary">
+        <FaExternalLinkAlt className="text-lg" />
       </div>
-    </>
+
+      {/* Title */}
+      <h5 className="mb-2 text-lg font-semibold leading-snug tracking-normal text-text1">
+        {name}
+      </h5>
+
+      {/* Description */}
+      <p className="text-sm font-light leading-relaxed text-text2">
+        {description}
+      </p>
+    </a>
   );
 }
 
