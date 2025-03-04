@@ -11,17 +11,20 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const binaryNumbers = ["00", "01", "10", "11"];
+  const menuItems = ["About", "Experience", "Work", "Blog"];
+
   return (
-    <div className="flex justify-between items-center h-18 w-full px-6 lg:px-20 text-text1 text-lg font-semibold sticky top-0 py-6 z-50 bg-background opacity-95 backdrop-blur-3xl">
+    <div className="flex justify-between items-center h-20 w-full px-6 lg:px-20 text-text1 text-lg font-semibold sticky top-0 py-6 z-50 bg-background opacity-95 backdrop-blur-3xl">
       <button onClick={scrollToTop}>
         <img src={Logo} alt="Logo400" className="h-12 lg:h-14 opacity-100" />
       </button>
       
       {/* Desktop Menu */}
       <ul className="hidden lg:flex space-x-12">
-        {["About", "Experience", "Work", "Blog"].map((item, index) => (
+        {menuItems.map((item, index) => (
           <a key={index} className="group text-text1" href={`#${item.toLowerCase()}`}>
-            <span className="text-primary">{`0${index}. `}</span>
+            <span className="text-primary">{`${binaryNumbers[index]}. `}</span>
             <span className="group-hover:underline">{item}</span>
           </a>
         ))}
@@ -48,10 +51,10 @@ const Navbar = () => {
           nav ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        {["About", "Experience", "Work", "Blog"].map((item, index) => (
+        {menuItems.map((item, index) => (
           <li key={index} className="p-4">
             <a className="text-text1 group" href={`#${item.toLowerCase()}`}>
-              <span className="text-primary">{`0${index}. `}</span>
+              <span className="text-primary">{`${binaryNumbers[index]}. `}</span>
               <span className="group-hover:underline">{item}</span>
             </a>
           </li>

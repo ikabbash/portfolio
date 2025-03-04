@@ -70,7 +70,7 @@ function About() {
                     ].map((skill) => (
                       <span
                         key={skill}
-                        className="px-4 py-2 bg-background text-text3 rounded-lg text-sm font-medium shadow-sm"
+                        className="px-4 py-2 bg-tag text-secondary rounded-lg text-sm font-medium shadow-sm"
                       >
                         {skill}
                       </span>

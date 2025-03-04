@@ -58,7 +58,7 @@ export default function () {
       {/* reference: https://www.floatui.com/components/cards */}
       <section className="mx-auto px-4 max-w-screen-lg mb-[200px]" id="blog">
       <div className="mt-4 before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-secondary">
-        <h1 className="text-center md:text-left text-3xl font-bold text-text1">
+        <h1 className="text-center sm:text-left text-3xl font-bold text-text1">
           <span className="text-primary">11. </span>
           Latest Blog Posts
         </h1>
