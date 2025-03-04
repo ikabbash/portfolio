@@ -2,7 +2,7 @@
 
 ## To-do
 
-- [ ] 404 page
+- [x] 404 page
 - [x] Rework About section
 - [x] Rework projects section
 - [ ] Update text
