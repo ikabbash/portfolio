@@ -28,16 +28,26 @@ function Experience() {
                   company: "eSpace",
                   link: "https://espace.com.eg/",
                   duration: "February 2023 - Present",
-                  description:
-                    "Pellentesque feugiat ante at nisl efficitur, in mollis orci scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+                  description: [
+                    "Created and managed Kubernetes clusters (AKS and on-premise), deploying and maintaining microservices applications to ensure high availability and scalability across production and development environments.",
+                    "Set up and configured on-premise environments for clients, tailoring infrastructure to project needs and deploying microservices applications for seamless operation.",
+                    "Managed and optimized cloud infrastructure on Azure, implementing cost-saving strategies and ensuring efficient resource utilization.",
+                    "Worked closely with development teams through Jira to troubleshoot deployment issues, enhance CI/CD pipelines, configure application integrations, and improve system stability across multiple projects.",
+                    "Migrated applications from standalone servers to Kubernetes clusters using a GitOps approach, securely decommissioning old servers and streamlining deployment workflows.",
+                    "Implemented monitoring and logging solutions using Prometheus, Grafana, and Loki to track system performance, detect issues proactively, and improve observability.",
+                    "Worked with a client on an AI-driven startup, integrating SIEM tools, Kafka, Kafka Connect, and Elasticsearch. Led environment setup and streamlined data flow between components.",
+                  ],
                 },
                 {
                   title: "DevOps Engineer Internship",
                   company: "eSpace",
                   link: "https://espace.com.eg/",
                   duration: "August 2022 - September 2022",
-                  description:
-                    "Morbi vulputate aliquam libero non dictum. Aliquam sit amet nunc ut diam aliquet tincidunt nec nec dui. Donec mollis turpis eget egestas sodales.",
+                  description: [
+                    "Gained hands-on experience with Docker, Jenkins, Kubernetes, and Terraform through practical tasks.",
+                    "Deployed and managed a Kubernetes cluster for two intern-led projects, integrating CI/CD pipelines for automated workflows.",
+                    "Worked on database replication and failover strategies to enhance system reliability.",
+                  ],
                 },
               ].map((exp, index) => (
                 <div
@@ -59,7 +69,11 @@ function Experience() {
                   <time className="text-xs tracking-wide text-text2">
                     {exp.duration}
                   </time>
-                  <p className="mt-3 text-text2">{exp.description}</p>
+                  <ul className="mt-3 text-text2 list-disc list-inside space-y-2">
+                    {exp.description.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>

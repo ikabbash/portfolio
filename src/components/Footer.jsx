@@ -22,7 +22,7 @@ export default function Footer() {
           ))}
         </div>
       </footer>
-      <p className="text-center mb-4 text-primary text-lg">Built and designed by Ibrahim Kabbash.</p>
+      <p className="text-center mb-4 text-primary text-md">Built and designed by Ibrahim Kabbash.</p>
       <div className="p-3 text-center bg-card text-text1"></div>
     </>
   );

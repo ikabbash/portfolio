@@ -67,6 +67,7 @@ function About() {
                       "Terraform",
                       "GCP",
                       "Jenkins",
+                      "Python",
                     ].map((skill) => (
                       <span
                         key={skill}

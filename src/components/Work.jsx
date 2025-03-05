@@ -20,7 +20,7 @@ function Work() {
 
   return (
     <div className="mb-[400px]">
-      <div className="container px-4 py-12 mx-auto max-w-screen-lg scroll-mt-20" id="work">
+      <div className="container px-4 py-12 mx-auto max-w-screen-lg scroll-mt-6" id="work">
         <div className="mt-4 before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-secondary">
           <h1 className="text-center sm:text-left text-3xl font-bold text-text1 mb-4">
             <span className="text-primary">10. </span> Personal Projects

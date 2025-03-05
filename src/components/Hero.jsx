@@ -22,17 +22,15 @@ function Hero() {
             style={{ fontSize: "2em", display: "inline-block" }}
           />
         </p>
-        <h1 className="md:text-6xl sm:text-5xl text-3xl font-bold md:py-6 text-text1">
+        <h1 className="md:text-5xl sm:text-4xl text-2xl font-bold md:py-6 text-text1">
           My name's Ibrahim Kabbash
         </h1>
         <div className="flex">
-          <p className="md:text-3xl sm:text-2xl text-2xl font-bold py-2 text-text2">
-            I'm a DevOps Engineer focused on streamlining operations and building resilient, automated systems.
+          <p className="md:text-xl sm:text-lg text-lg font-bold py-2 text-text2">
+            I'm a DevOps Engineer with a focus on automation and cloud infrastructure, dedicated to
+            improving system reliability, optimizing workflows, and integrating security best practices.
           </p>
         </div>
-        <p className="md:text-xl text-lg font-bold text-text2">
-          Infrastructure · Operations · Cloud Management · Cybersecurity · Artificial Intelligence
-        </p>
       </div>
     </div>
   );
