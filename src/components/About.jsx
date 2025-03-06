@@ -3,8 +3,8 @@ import React from "react";
 function About() {
   return (
     <>
-      <div className="mb-[400px]" id="about">
-        <div className="container max-w-5xl mx-auto py-40 px-4 md:px-10 flex flex-col-reverse lg:flex-row items-center gap-20">
+      <div className="mb-[200px] scroll-mt-24" id="about">
+        <div className="container max-w-5xl mx-auto py-4 px-4 md:px-10 flex flex-col-reverse lg:flex-row items-center gap-20">
           <div className="my-auto flex flex-col gap-3">
           {/* Bar and Header container */}
           <div className="flex flex-col items-center sm:items-start">
@@ -12,7 +12,7 @@ function About() {
             <div className="w-24 h-1 mb-4 rounded-md bg-secondary" />
             {/* Header */}
             <h1 className="font-bold text-3xl text-text1 mb-4">
-              <span className="text-primary">00. </span>About
+              <span className="text-primary">01. </span>About
             </h1>
           </div>
 
@@ -68,6 +68,7 @@ function About() {
                       "GCP",
                       "Jenkins",
                       "Python",
+                      "Ansible",
                     ].map((skill) => (
                       <span
                         key={skill}

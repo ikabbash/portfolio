@@ -59,7 +59,7 @@ export default function () {
       <section className="mx-auto px-4 max-w-screen-lg mb-[200px]" id="blog">
       <div className="mt-4 before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-secondary">
         <h1 className="text-center sm:text-left text-3xl font-bold text-text1">
-          <span className="text-primary">11. </span>
+          <span className="text-primary">04. </span>
           Latest Blog Posts
         </h1>
         </div>
@@ -96,24 +96,6 @@ export default function () {
           <span className="text-lg py-1 text-text2">
             Check out my other articles on{" "}
             <a
-              href="https://dev.to/ikabbash"
-              target="_blank"
-              className="text-secondary font-semibold hover:underline
-            transition-all duration-500"
-            >
-              Dev.to
-            </a>
-            <a>, </a>
-            <a
-              href="https://medium.com/@ikabbash"
-              target="_blank"
-              className="text-secondary font-semibold hover:underline
-            transition-all duration-500"
-            >
-              Medium
-            </a>
-            <a> or </a>
-            <a
               href="https://ikabbash.hashnode.dev"
               target="_blank"
               className="text-secondary font-semibold hover:underline
@@ -121,6 +103,22 @@ export default function () {
             >
               {" "}
               Hashnode
+            </a><span>, </span>
+            <a
+              href="https://medium.com/@ikabbash"
+              target="_blank"
+              className="text-secondary font-semibold hover:underline
+            transition-all duration-500"
+            >
+              Medium
+            </a><span>, or </span>
+            <a
+              href="https://dev.to/ikabbash"
+              target="_blank"
+              className="text-secondary font-semibold hover:underline
+            transition-all duration-500"
+            >
+              Dev.to
             </a>.
           </span>
         </div>

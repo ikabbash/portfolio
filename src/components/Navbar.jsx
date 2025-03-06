@@ -11,7 +11,7 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const binaryNumbers = ["00", "01", "10", "11"];
+  const binaryNumbers = ["01", "02", "03", "04"];
   const menuItems = ["About", "Experience", "Work", "Blog"];
 
   return (

@@ -9,21 +9,26 @@ function Work() {
   // Fetch GitHub repositories
   const getRepos = async () => {
     const { data } = await axios.get(
-      "https://api.github.com/users/ikabbash/repos?sort=created&per_page=6"
+      "https://api.github.com/users/ikabbash/repos?sort=created&per_page=7"
     );
-    setRepos(data);
+    // remove this line and make page=6 after creating 6 new other repos
+    const filteredRepos = data.filter(repo => repo.name !== "ikabbash");
+    setRepos(filteredRepos);
+    // setRepos(data);
   };
 
   useEffect(() => {
     getRepos();
   }, []);
 
+  // console.log(repos)
+
   return (
-    <div className="mb-[400px]">
-      <div className="container px-4 py-12 mx-auto max-w-screen-lg scroll-mt-6" id="work">
+    <div className="mb-[150px]">
+      <div className="container px-4 py-4 mx-auto max-w-screen-lg scroll-mt-24" id="work">
         <div className="mt-4 before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-secondary">
           <h1 className="text-center sm:text-left text-3xl font-bold text-text1 mb-4">
-            <span className="text-primary">10. </span> Personal Projects
+            <span className="text-primary">03. </span> Personal Projects
           </h1>
         </div>
         <PersonalProjects />
@@ -49,7 +54,7 @@ function Work() {
         <a className="py-3 px-4 rounded-md border-2 transition duration-300 ease-in-out group hover:border-secondary"
           href="https://github.com/iKabbash"
           target="_blank">
-          <div className="inline-block mt-16 text-lg transition ease-in-out group-hover:text-secondary">
+          <div className="inline-block mt-14 text-lg transition ease-in-out group-hover:text-secondary">
             Visit Github
           </div>
         </a>
