@@ -3,14 +3,14 @@ import Certificates from "./sub-components/Certificates";
 
 function Experience() {
   return (
-    <section className="mb-[400px] scroll-mt-16" id="experience">
-      <div className="container max-w-5xl mx-auto py-12 md:px-4">
+    <section className="mb-[200px] scroll-mt-24" id="experience">
+      <div className="container max-w-5xl mx-auto py-4 md:px-4">
         <div className="grid gap-4 sm:grid-cols-12 mx-4">
           {/* Section Header */}
           <div className="sm:col-span-3 text-center sm:text-left mb-4">
             <div className="before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-secondary" />
             <h3 className="text-3xl font-bold text-text1">
-              <span className="text-primary">01.</span> Experience
+              <span className="text-primary">02.</span> Experience
             </h3>
             <span className="text-sm font-bold tracking-wider uppercase text-text2">
               Where I've worked
@@ -39,7 +39,7 @@ function Experience() {
                   ],
                 },
                 {
-                  title: "DevOps Engineer Internship",
+                  title: "DevOps Engineer Intern",
                   company: "eSpace",
                   link: "https://espace.com.eg/",
                   duration: "August 2022 - September 2022",
@@ -52,7 +52,7 @@ function Experience() {
               ].map((exp, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:relative sm:before:absolute sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-38px] sm:before:top-0 sm:before:translate-y-[6px] sm:before:z-[1] before:dark:bg-red-700"
+                  className="flex flex-col sm:relative sm:before:absolute sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-37px] sm:before:top-0 sm:before:translate-y-[6px] sm:before:z-[1] before:dark:bg-primary"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-text1">
                     {exp.title}{" "}
