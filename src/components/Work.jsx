@@ -9,10 +9,19 @@ function Work() {
   // Fetch GitHub repositories
   const getRepos = async () => {
     const { data } = await axios.get(
-      "https://api.github.com/users/ikabbash/repos?sort=created&per_page=7"
+      "https://api.github.com/users/ikabbash/repos?sort=created&per_page=20"
     );
-    // remove this line and make page=6 after creating 6 new other repos
-    const filteredRepos = data.filter(repo => repo.name !== "ikabbash");
+    // list of manually select pinned repos temporarily
+    // remove the pinnedRepos and filteredRepos, set page=6 again once things are sorted
+    const pinnedRepos = [
+      "dotfiles",
+      "toolkit",
+      "topics-extractor",
+      "cheat-sheets",
+      "survey-analyzer",
+      "portfolio",
+    ];
+    const filteredRepos = data.filter(repo => pinnedRepos.includes(repo.name));
     setRepos(filteredRepos);
     // setRepos(data);
   };

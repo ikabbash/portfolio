@@ -19,18 +19,24 @@ const Navbar = () => {
       <button onClick={scrollToTop}>
         <img src={Logo} alt="Logo400" className="h-12 lg:h-14 opacity-100" />
       </button>
-      
+
       {/* Desktop Menu */}
       <ul className="hidden lg:flex space-x-12">
         {menuItems.map((item, index) => (
-          <a key={index} className="group text-text1" href={`#${item.toLowerCase()}`}>
+          <a
+            key={index}
+            className="group text-text1"
+            href={`#${item.toLowerCase()}`}
+          >
             <span className="text-primary">{`${binaryNumbers[index]}. `}</span>
             <span className="group-hover:underline">{item}</span>
           </a>
         ))}
         <li>
           <a
-            href="#_"
+            href="/ikabbash-cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-md px-4 py-1.5 group cursor-pointer hover:bg-secondary border-2 transition duration-300 ease border-secondary"
           >
             <span className="text-secondary transition duration-300 group-hover:text-card ease">
@@ -42,7 +48,11 @@ const Navbar = () => {
 
       {/* Mobile Menu Toggle */}
       <div onClick={handleNav} className="block lg:hidden">
-        {nav ? <AiOutlineClose className="text-secondary" size={25} /> : <AiOutlineMenu className="text-secondary" size={25} />}
+        {nav ? (
+          <AiOutlineClose className="text-secondary" size={25} />
+        ) : (
+          <AiOutlineMenu className="text-secondary" size={25} />
+        )}
       </div>
 
       {/* Mobile Menu */}
@@ -61,7 +71,9 @@ const Navbar = () => {
         ))}
         <li className="p-4 mt-1">
           <a
-            href="#_"
+            href="/ikabbash-cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-md px-4 py-1.5 group cursor-pointer hover:bg-secondary border-2 transition duration-300 ease border-secondary"
           >
             <span className="text-secondary transition duration-300 group-hover:text-card ease">
