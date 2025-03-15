@@ -29,13 +29,14 @@ function Experience() {
                   link: "https://espace.com.eg/",
                   duration: "February 2023 - Present",
                   description: [
-                    "Created and managed Kubernetes clusters (AKS and on-premise), deploying and maintaining microservices applications to ensure high availability and scalability across production and development environments.",
-                    "Set up and configured on-premise environments for clients, tailoring infrastructure to project needs and deploying microservices applications for seamless operation.",
+                    "Created, managed, and configured Kubernetes clusters (AKS and on-premise) for clients, deploying and maintaining microservices apps to ensure high availability, seamless operation, and alignment with project needs across production environments.",
                     "Managed and optimized cloud infrastructure on Azure, implementing cost-saving strategies and ensuring efficient resource utilization.",
                     "Worked closely with development teams through Jira to troubleshoot deployment issues, enhance CI/CD pipelines, configure application integrations, and improve system stability across multiple projects.",
-                    "Migrated applications from standalone servers to Kubernetes clusters using a GitOps approach, securely decommissioning old servers and streamlining deployment workflows.",
+                    "Migrated legacy apps from standalone servers to Kubernetes clusters using a GitOps approach, securely decommissioning old servers and streamlining deployment workflows.",
                     "Implemented monitoring and logging solutions using Prometheus, Grafana, and Loki to track system performance, detect issues proactively, and improve observability.",
                     "Worked with a client on an AI-driven startup, integrating SIEM tools, Kafka, Kafka Connect, and Elasticsearch. Led environment setup and streamlined data flow between components.",
+                    "Researched and configured Sentinel and Splunk SIEM tools to export logs and alerts via Fluentd, enabling data flow into Kafka for centralized processing and client application use.",
+                    "Delivered sessions on Azure AI services for the company and a sponsored event, and led internal DevOps team sessions on DevSecOps and Certified Kubernetes Security (CKS) practices.",
                   ],
                 },
                 {
