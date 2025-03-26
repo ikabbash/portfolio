@@ -52,6 +52,7 @@ export default function () {
   }, []);
 
   // console.log(hashArticles?.[0]?.node);
+  // console.log(hashArticles);
 
   return (
     <>
