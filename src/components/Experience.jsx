@@ -36,7 +36,7 @@ function Experience() {
                     "Implemented monitoring and logging solutions using Prometheus, Grafana, and Loki to track system performance, detect issues proactively, and improve observability.",
                     "Worked with a client on an AI-driven startup, integrating SIEM tools, Kafka, Kafka Connect, and Elasticsearch. Led environment setup and streamlined data flow between components.",
                     "Researched and configured Sentinel and Splunk SIEM tools to export logs and alerts via Fluentd, enabling data flow into Kafka for centralized processing and client application use.",
-                    "Delivered sessions on Azure AI services for the company and a sponsored event, and led internal DevOps team sessions on DevSecOps and Certified Kubernetes Security (CKS) practices.",
+                    "Delivered sessions on Azure AI services for the company and a sponsored event, and led internal DevOps team sessions on DevSecOps practices.",
                   ],
                 },
                 {

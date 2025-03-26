@@ -19,7 +19,7 @@ function Work() {
       "topics-extractor",
       "cheat-sheets",
       "survey-analyzer",
-      "portfolio",
+      "openvpn-builder",
     ];
     const filteredRepos = data.filter(repo => pinnedRepos.includes(repo.name));
     setRepos(filteredRepos);

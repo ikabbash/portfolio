@@ -12,18 +12,18 @@
     <a href="https://tailwindcss.com/docs/installation/using-vite" target="_blank">Tailwindcss</a>, and hosted with
     <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a>.
 </p>
-<!-- <p align="center">
+<p align="center">
     <a >
         <img src="https://img.shields.io/website?url=https%3A%2F%2Fikabbash.com&style=for-the-badge&logo=cloudflarepages&link=https%3A%2F%2Fikabbash.com" 
             alt="Cloudflare Page status"/>
     </a>
-</p> -->
-<p align="center">
+</p>
+<!-- <p align="center">
     <a >
         <img src="https://img.shields.io/website?url=https%3A%2F%2Fportfolio-8vk.pages.dev&style=for-the-badge&logo=cloudflarepages&link=https%3A%2F%2Fportfolio-8vk.pages.dev" 
             alt="Cloudflare Page status"/>
     </a>
-</p>
+</p> -->
 
 ![preview](public/thumbnail.png)
 
