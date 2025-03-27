@@ -38,7 +38,7 @@ function About() {
                   <p className="text-text2 leading-relaxed">
                     You can reach out to me at{" "}
                     <a
-                      href="mailto:jane.doe@example.com"
+                      href="mailto:ikabbash@proton.me"
                       className="text-primary hover:underline font-medium"
                     >
                       ikabbash@proton.me
