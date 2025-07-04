@@ -24,19 +24,31 @@ function Experience() {
               {/** Experience Items */}
               {[
                 {
+                  title: "Mid-Level DevOps Engineer",
+                  company: "eSpace",
+                  link: "https://espace.com.eg/",
+                  duration: "February 2025 - Present",
+                  description: [
+                    "Managed and optimized multiple Ollama model deployments with Nginx load balancing for high availability under concurrent load.",
+                    "Deployed and managed a 20+ service containerized system for an AI startup in UK using Docker Compose, ensuring smooth integration and operation across Java (Spring Boot), FastAPI, vLLM, PostgreSQL, Elasticsearch, and Kafka with custom connectors.",
+                    "Integrated SIEM tools like Azure Sentinel with Fluentd and Kafka to build a unified log pipeline for centralized security event processing and incident detection.",
+                    "Collaborated with dev teams to support root cause analysis, review system designs, and provide input on technical approaches."
+                  ],
+                },
+                {
                   title: "DevOps Engineer",
                   company: "eSpace",
                   link: "https://espace.com.eg/",
-                  duration: "February 2023 - Present",
+                  duration: "February 2023 - January 2025",
                   description: [
-                    "Created, managed, and configured Kubernetes clusters (AKS and on-premise) for clients, deploying and maintaining microservices apps to ensure high availability, seamless operation, and alignment with project needs across production environments.",
-                    "Managed and optimized cloud infrastructure on Azure, implementing cost-saving strategies and ensuring efficient resource utilization.",
-                    "Worked closely with development teams through Jira to troubleshoot deployment issues, enhance CI/CD pipelines, configure application integrations, and improve system stability across multiple projects.",
-                    "Migrated legacy apps from standalone servers to Kubernetes clusters using a GitOps approach, securely decommissioning old servers and streamlining deployment workflows.",
-                    "Implemented monitoring and logging solutions using Prometheus, Grafana, and Loki to track system performance, detect issues proactively, and improve observability.",
-                    "Worked with a client on an AI-driven startup, integrating SIEM tools, Kafka, Kafka Connect, and Elasticsearch. Led environment setup and streamlined data flow between components.",
-                    "Researched and configured Sentinel and Splunk SIEM tools to export logs and alerts via Fluentd, enabling data flow into Kafka for centralized processing and client application use.",
-                    "Delivered sessions on Azure AI services for the company and a sponsored event, and led internal DevOps team sessions on DevSecOps practices.",
+                    "Built and managed Kubernetes clusters on-prem and in AKS, deployed .NET microservices with Helm and oversaw system stability.",
+                    "Worked directly with clients to support and maintain multiple environments, deliver enhancements, and provide tailored solutions for their users.",
+                    "Worked with dev teams via Jira on multiple Ruby on Rails projects to troubleshoot problems, add new configurations, and deploy with zero downtime.",
+                    "Tackled challenging issues by tracing root causes across systems, eliminating recurring faults, and hardening reliability.",
+                    "Containerized a legacy Rails app, migrated it to Kubernetes with zero downtime, implemented GitOps with ArgoCD, and decommissioned the old server.",
+                    "Set up Prometheus, Grafana, and Loki for monitoring, issue detection, and improved observability.",
+                    "Automated operational tasks with Python and Bash to reduce manual effort and accelerate environment setup.",
+                    "Delivered sessions on Azure AI services and led internal DevOps team sessions on DevSecOps practices.",
                   ],
                 },
                 {
@@ -45,9 +57,9 @@ function Experience() {
                   link: "https://espace.com.eg/",
                   duration: "August 2022 - September 2022",
                   description: [
-                    "Gained hands-on experience with Docker, Jenkins, Kubernetes, and Terraform through practical tasks.",
-                    "Deployed and managed a Kubernetes cluster for two intern-led projects, integrating CI/CD pipelines for automated workflows.",
-                    "Worked on database replication and failover strategies to enhance system reliability.",
+                    "Dockerized applications and managed a Kubernetes cluster for intern-led projects, integrating CI/CD pipelines and automating deployments.",
+                    "Deployed AWS EC2 instances via Terraform, set up and configured Jenkins with CI/CD pipelines, and installed and managed Kubernetes clusters.",
+                    "Worked on database replication and failover strategies using PostgreSQL repmgr to enhance system reliability.",
                   ],
                 },
               ].map((exp, index) => (
