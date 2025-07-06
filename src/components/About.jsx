@@ -21,18 +21,16 @@ function About() {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <p className="text-text2 leading-relaxed">
-                    I'm a DevOps Engineer driven by self-learning and a constant curiosity
-                    to explore new technologies, tools, and methodologies. I enjoy diving
-                    deep into systems, understanding how they work, and finding ways to improve them.
-                    This passion extends to troubleshooting challenges, optimizing workflows, and
-                    building automated solutions that enhance efficiency and reliability.
-                    I'm always looking for ways to push the boundaries of what's possible.
+                    I'm a DevOps engineer who really enjoys learning and figuring things out.
+                    I'm always exploring, whether it's a new approach, a different methodology,
+                    a new tool, or just digging into how things work and where they can add real value.
+                    I like getting into the details, solving real problems, optimizing and enhancing wherever I can,
+                    and building robust automated solutions that help improve systems, increase stability, and keep everything reliable.
                   </p>
 
                   <p className="text-text2 leading-relaxed">
-                    I'm especially interested in DevSecOps, exploring ways to integrate security
-                    into automation and infrastructure. I'm also interested in MLOps,
-                    learning about deploying and managing machine learning models.
+                    I'm also especially into DevSecOps, looking for ways to build security into automation and infrastructure without adding friction.
+                    I'm also interested in MLOps, experimenting with AI, and how they fit into real-world cases.
                   </p>
 
                   <p className="text-text2 leading-relaxed">
@@ -60,6 +58,7 @@ function About() {
                       "Helm",
                       "ArgoCD",
                       "Azure DevOps",
+                      "Gitlab",
                       "Prometheus",
                       "AWS",
                       "AI",
