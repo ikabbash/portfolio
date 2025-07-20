@@ -21,16 +21,14 @@ function About() {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <p className="text-text2 leading-relaxed">
-                    I'm a DevOps engineer who really enjoys learning and figuring things out.
-                    I'm always exploring, whether it's a new approach, a different methodology,
-                    a new tool, or just digging into how things work and where they can add real value.
-                    I like getting into the details, solving real problems, optimizing and enhancing wherever I can,
-                    and building robust automated solutions that help improve systems, increase stability, and keep everything reliable.
+                    I'm driven by continuous improvement, self-learning, and automation.
+                    I enjoy digging into the details, solving practical problems, and optimizing systems
+                    to build secure, reliable, and resilient infrastructure that delivers lasting value.
                   </p>
 
                   <p className="text-text2 leading-relaxed">
-                    I'm also especially into DevSecOps, looking for ways to build security into automation and infrastructure without adding friction.
-                    I'm also interested in MLOps, experimenting with AI, and how they fit into real-world cases.
+                    I'm also interested in DevSecOps, focusing on embedding security into automation and infrastructure without added friction.
+                    And I like to explore MLOps on the side, looking at how AI can be applied in real-world scenarios.
                   </p>
 
                   <p className="text-text2 leading-relaxed">
@@ -58,7 +56,7 @@ function About() {
                       "Helm",
                       "ArgoCD",
                       "Azure DevOps",
-                      "Gitlab",
+                      "GitLab",
                       "Prometheus",
                       "AWS",
                       "AI",
