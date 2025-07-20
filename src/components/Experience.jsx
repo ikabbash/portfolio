@@ -29,10 +29,9 @@ function Experience() {
                   link: "https://espace.com.eg/",
                   duration: "February 2025 - Present",
                   description: [
-                    "Managed and optimized multiple Ollama model deployments with Nginx load balancing for high availability under concurrent load.",
-                    "Deployed and managed a 20+ service containerized system for an AI startup in UK using Docker Compose, ensuring smooth integration and operation across Java (Spring Boot), FastAPI, vLLM, PostgreSQL, Elasticsearch, and Kafka with custom connectors.",
-                    "Integrated SIEM tools like Azure Sentinel with Fluentd and Kafka to build a unified log pipeline for centralized security event processing and incident detection.",
-                    "Collaborated with dev teams to support root cause analysis, review system designs, and provide input on technical approaches."
+                    "Deployed and managed a containerized multi-service AI system, ensuring smooth integration across 20+ components.",
+                    "Optimized and scaled LLM workloads by deploying and load balancing multiple instances with Ollama before transitioning to vLLM.",
+                    "Set up centralized log shipping with Fluentd pulling from SIEM tools like Azure Sentinel, and supported developers with troubleshooting and system design input.",
                   ],
                 },
                 {
@@ -41,14 +40,12 @@ function Experience() {
                   link: "https://espace.com.eg/",
                   duration: "February 2023 - January 2025",
                   description: [
-                    "Built and managed Kubernetes clusters on-prem and in AKS, deployed .NET microservices with Helm and oversaw system stability.",
-                    "Worked directly with clients to support and maintain multiple environments, deliver enhancements, and provide tailored solutions for their users.",
-                    "Worked with dev teams via Jira on multiple Ruby on Rails projects to troubleshoot problems, add new configurations, and deploy with zero downtime.",
-                    "Tackled challenging issues by tracing root causes across systems, eliminating recurring faults, and hardening reliability.",
-                    "Containerized a legacy Rails app, migrated it to Kubernetes with zero downtime, implemented GitOps with ArgoCD, and decommissioned the old server.",
-                    "Set up Prometheus, Grafana, and Loki for monitoring, issue detection, and improved observability.",
-                    "Automated operational tasks with Python and Bash to reduce manual effort and accelerate environment setup.",
-                    "Delivered sessions on Azure AI services and led internal DevOps team sessions on DevSecOps practices.",
+                    "Provisioned and managed AKS and on-prem Kubernetes clusters, deploying .NET and Rails apps using Helm and GitOps.",
+                    "Tackled complex issues by tracing root causes and improving system reliability.",
+                    "Automated tasks with Python and Bash, migrated legacy apps to Kubernetes with zero-downtime,",
+                    "set up monitoring with Prometheus and Grafana, and worked closely with clients and devs to support",
+                    "environments and deliver enhancements, ensuring system reliability.",
+                    "Also lead internal sessions on DevSecOps and Azure AI tools."
                   ],
                 },
                 {
@@ -57,9 +54,7 @@ function Experience() {
                   link: "https://espace.com.eg/",
                   duration: "August 2022 - September 2022",
                   description: [
-                    "Dockerized applications and managed a Kubernetes cluster for intern-led projects, integrating CI/CD pipelines and automating deployments.",
-                    "Deployed AWS EC2 instances via Terraform, set up and configured Jenkins with CI/CD pipelines, and installed and managed Kubernetes clusters.",
-                    "Worked on database replication and failover strategies using PostgreSQL repmgr to enhance system reliability.",
+                    "Dockerized apps, managed Kubernetes clusters, and automated deployments with CI/CD. Provisioned AWS EC2 with Terraform, set up Jenkins, and implemented PostgreSQL replication for high availability.",
                   ],
                 },
               ].map((exp, index) => (
@@ -82,11 +77,9 @@ function Experience() {
                   <time className="text-xs tracking-wide text-text2">
                     {exp.duration}
                   </time>
-                  <ul className="mt-3 text-text2 list-disc list-inside space-y-2">
-                    {exp.description.map((point, i) => (
-                      <li key={i}>{point}</li>
-                    ))}
-                  </ul>
+                  <p className="mt-3 text-text2">
+                    {exp.description.join(" ")}
+                  </p>
                 </div>
               ))}
             </div>
