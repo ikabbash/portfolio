@@ -58,14 +58,19 @@ function About() {
                       "Azure DevOps",
                       "GitLab",
                       "Prometheus",
+                      "Grafana",
+                      "Loki",
                       "AWS",
                       "AI",
                       "DevSecOps",
                       "Terraform",
                       "GCP",
                       "Jenkins",
+                      "Kafka",
                       "Python",
                       "Ansible",
+                      "Vault",
+                      "Cilium"
                     ].map((skill) => (
                       <span
                         key={skill}
