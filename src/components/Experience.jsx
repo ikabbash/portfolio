@@ -54,7 +54,8 @@ function Experience() {
                   link: "https://espace.com.eg/",
                   duration: "August 2022 - October 2022",
                   description: [
-                    "Dockerized apps, managed Kubernetes clusters, and automated deployments with CI/CD. Provisioned AWS EC2 with Terraform, set up Jenkins, and implemented PostgreSQL replication for high availability.",
+                    "Dockerized apps, managed Kubernetes clusters, and automated deployments with CI/CD.",
+                    "Provisioned AWS EC2 with Terraform, set up Jenkins, and implemented PostgreSQL replication for high availability.",
                   ],
                 },
               ].map((exp, index) => (

@@ -21,14 +21,12 @@ function About() {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <p className="text-text2 leading-relaxed">
-                    I'm driven by continuous improvement, self-learning, and automation.
-                    I enjoy digging into the details, solving practical problems, and optimizing systems
-                    to build secure, reliable, and resilient infrastructure that delivers lasting value.
-                  </p>
-
-                  <p className="text-text2 leading-relaxed">
-                    I'm also interested in DevSecOps, focusing on embedding security into automation and infrastructure without added friction.
-                    And I like to explore MLOps on the side, looking at how AI can be applied in real-world scenarios.
+                    I specialize in designing and optimizing automation solutions, with
+                    a focus on Kubernetes, and building resilient, scalable systems.
+                    I like to tackle complex systems end-to-end, simplifying operations, enhancing
+                    reliability, and ensuring every component works seamlessly together.
+                    I'm also deeply passionate about self-learning and finding better ways to
+                    solve problems—every challenge is always a chance to make a better impact.
                   </p>
 
                   <p className="text-text2 leading-relaxed">
@@ -41,12 +39,16 @@ function About() {
                     </a>{" "}
                     for inquiries.
                   </p>
+
+                  <p className="mt-10 text-text2 leading-relaxed">
+                    Interests: Platform Engineering, Homelabbing, Cybersecurity, DevSecOps, AI/ML Ops.
+                  </p>
                 </div>
 
                 {/* Skills Section */}
                 <div>
                   <h3 className="text-xl font-semibold text-text2 mb-4">
-                    Skills
+                    What I Use
                   </h3>
                   <div className="flex flex-wrap gap-3">
                     {[
@@ -58,13 +60,11 @@ function About() {
                       "Azure DevOps",
                       "GitLab",
                       "Prometheus",
+                      "GCP",
+                      "AWS",
                       "Grafana",
                       "Loki",
-                      "AWS",
-                      "AI",
-                      "DevSecOps",
                       "Terraform",
-                      "GCP",
                       "Jenkins",
                       "Kafka",
                       "Python",
@@ -84,7 +84,7 @@ function About() {
               </div>
 
               {/* Decorative corner accent */}
-              <div className="absolute bottom-0 right-0 w-12 h-12 border-b-1 border-r-1 border-primary rounded-br-lg translate-x-1 translate-y-1"></div>
+              <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-primary rounded-br-lg translate-x-1 translate-y-1"></div>
             </div>
           </div>
         </div>

@@ -24,8 +24,7 @@ function Hero() {
         </h1>
         <div className="flex">
           <p className="md:text-xl sm:text-lg text-lg font-bold py-2 text-text2">
-            I'm a DevOps Engineer with a focus on automation and cloud infrastructure, dedicated to
-            improving system reliability, optimizing workflows, and integrating security best practices.
+            And I'm a DevOps Engineer, committed to learning, growth, and building systems that are reliable, automated, and secure.
           </p>
         </div>
       </div>
