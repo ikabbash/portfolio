@@ -45,16 +45,17 @@ function Experience() {
                     "Automated tasks with Python and Bash, migrated legacy apps to Kubernetes with zero-downtime,",
                     "set up monitoring with Prometheus and Grafana, and worked closely with clients and devs to support",
                     "environments and deliver enhancements, ensuring system reliability.",
-                    "Also lead internal sessions on DevSecOps and Azure AI tools."
+                    "Also lead internal sessions on DevSecOps and Azure AI services."
                   ],
                 },
                 {
                   title: "DevOps Engineer Intern",
                   company: "eSpace",
                   link: "https://espace.com.eg/",
-                  duration: "August 2022 - September 2022",
+                  duration: "August 2022 - October 2022",
                   description: [
-                    "Dockerized apps, managed Kubernetes clusters, and automated deployments with CI/CD. Provisioned AWS EC2 with Terraform, set up Jenkins, and implemented PostgreSQL replication for high availability.",
+                    "Dockerized apps, managed Kubernetes clusters, and automated deployments with CI/CD.",
+                    "Provisioned AWS EC2 with Terraform, set up Jenkins, and implemented PostgreSQL replication for high availability.",
                   ],
                 },
               ].map((exp, index) => (
