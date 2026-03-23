@@ -1,5 +1,3 @@
-import React from "react";
-
 const certificates = [
   {
     title: "CKS: Certified Kubernetes Security Specialist",

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import ProjectCard from "./sub-components/ProjectCard";
 import PersonalProjects from "./sub-components/PersonalProjects";

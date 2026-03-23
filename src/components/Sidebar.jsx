@@ -1,4 +1,3 @@
-import React from "react";
 import { FaMedium, FaHashnode} from "react-icons/fa6";
 import { BiLogoGithub, BiLogoLinkedinSquare,BiLogoDevTo } from "react-icons/bi";
 

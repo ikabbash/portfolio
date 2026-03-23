@@ -1,4 +1,3 @@
-import React from "react";
 import dayjs from "dayjs";
 
 function Card({ url, image_url, date, title }) {

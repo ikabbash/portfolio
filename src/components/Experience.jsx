@@ -1,4 +1,3 @@
-import React from "react";
 import Certificates from "./sub-components/Certificates";
 
 function Experience() {

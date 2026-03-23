@@ -1,4 +1,3 @@
-import React from "react";
 import SurveyNomadImage from "../../assets/SurveyNomad.png";
 
 const projects = [
