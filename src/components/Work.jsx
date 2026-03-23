@@ -34,7 +34,7 @@ function Work() {
 
   return (
     <div className="mb-[150px]">
-      <div className="container px-4 py-4 mx-auto max-w-screen-lg scroll-mt-24" id="work">
+      <div className="container px-4 py-4 mx-auto max-w-5xl scroll-mt-24" id="work">
         <div className="mt-4 before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-secondary">
           <h1 className="text-center sm:text-left text-3xl font-bold text-text1 mb-4">
             <span className="text-primary">03. </span> Personal Projects
@@ -48,7 +48,7 @@ function Work() {
       </h2>
 
       {/* Responsive Grid - 2 columns on mobile, 3 on larger screens */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 container max-w-screen-lg mx-auto px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 container max-w-5xl mx-auto px-4">
         {repos.map((repo) => (
           <ProjectCard
             name={repo.name}

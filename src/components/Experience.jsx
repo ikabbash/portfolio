@@ -60,7 +60,7 @@ function Experience() {
               ].map((exp, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:relative sm:before:absolute sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-37px] sm:before:top-0 sm:before:translate-y-[6px] sm:before:z-[1] before:dark:bg-primary"
+                  className="flex flex-col sm:relative sm:before:absolute sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-37px] sm:before:top-0 sm:before:translate-y-[6px] sm:before:z-1 before:dark:bg-primary"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-text1">
                     {exp.title}{" "}

@@ -38,7 +38,7 @@ const certificates = [
 
 function Certificates() {
   return (
-    <div className="container max-w-screen-lg mt-6 px-6 mx-auto">
+    <div className="container max-w-5xl mt-6 px-6 mx-auto">
       <section className="mb-32 text-text2 text-center">
         <h2 className="text-2xl font-bold mb-4 text-text1">Certificates</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 max-w-5xl mx-auto text-left">

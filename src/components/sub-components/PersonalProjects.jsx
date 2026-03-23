@@ -36,10 +36,10 @@ const ProjectList = () => {
               className="w-full md:w-1/4 rounded-lg mb-4 md:mb-0 object-cover"
             />
             <div className="md:ml-6 flex-1">
-              <h3 className="text-xl font-bold text-[#ccd6f6] group-hover:text-secondary">
+              <h3 className="text-xl font-bold text-text1 group-hover:text-secondary">
                 {project.title} ↗
               </h3>
-              <p className="text-[#8892b0] text-sm mt-2">{project.description}</p>
+              <p className="text-text3 text-sm mt-2">{project.description}</p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {project.hashtags.map((tag, i) => (
                   <span

@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 function Hero() {
   return (
     <div className="text-black px-10">
-      <div className="max-w-screen-lg h-screen w-full mx-auto text-left flex flex-col justify-center sm:px-10 relative -mt-20">
+      <div className="max-w-5xl h-screen w-full mx-auto text-left flex flex-col justify-center sm:px-10 relative -mt-20">
         <p className="text-secondary font-bold p-2 text-lg">
           <TypeAnimation
             sequence={[
