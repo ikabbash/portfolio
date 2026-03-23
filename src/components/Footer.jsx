@@ -1,12 +1,9 @@
-import { FaMedium, FaHashnode} from "react-icons/fa6";
-import { BiLogoGithub, BiLogoLinkedinSquare,BiLogoDevTo } from "react-icons/bi";
+import { FaHashnode, FaLinkedin, FaGithub} from "react-icons/fa6";
 
 const socialLinks = [
-  { href: "https://www.linkedin.com/in/ikabbash/", icon: <BiLogoLinkedinSquare /> },
-  { href: "https://github.com/ikabbash", icon: <BiLogoGithub /> },
+  { href: "https://github.com/ikabbash", icon: <FaGithub /> },
+  { href: "https://www.linkedin.com/in/ikabbash/", icon: <FaLinkedin /> },
   { href: "https://ikabbash.hashnode.dev", icon: <FaHashnode /> },
-  { href: "https://medium.com/@ikabbash", icon: <FaMedium /> },
-  { href: "https://dev.to/ikabbash", icon: <BiLogoDevTo /> },
 ];
 
 export default function Footer() {
