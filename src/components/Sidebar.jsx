@@ -1,7 +1,6 @@
 import React from "react";
-// import { FiYoutube, FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi";
-import { SiLinkedin, SiGithub, SiDevdotto, SiHashnode } from "react-icons/si";
-import { FaMedium } from "react-icons/fa6"
+import { FaMedium, FaHashnode} from "react-icons/fa6";
+import { BiLogoGithub, BiLogoLinkedinSquare,BiLogoDevTo } from "react-icons/bi";
 
 function Sidebar() {
   return (
@@ -11,15 +10,15 @@ function Sidebar() {
       <div className="h-[100px] ml-2.5 bg-text2 w-[2px]"></div>
 
       <a href="https://www.linkedin.com/in/ikabbash/" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
-        <SiLinkedin />
+        <BiLogoLinkedinSquare />
       </a>
 
       <a href="https://github.com/ikabbash" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
-        <SiGithub />
+        <BiLogoGithub />
       </a>
 
       <a href="https://ikabbash.hashnode.dev" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
-        <SiHashnode />
+        <FaHashnode />
       </a>
 
       <a href="https://medium.com/@ikabbash" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
@@ -27,7 +26,7 @@ function Sidebar() {
       </a>
 
       <a href="https://dev.to/ikabbash" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
-        <SiDevdotto />
+        <BiLogoDevTo />
       </a>
 
       <div className="h-[100px] ml-2.5 bg-text2 w-[2px]"></div>
