@@ -14,9 +14,9 @@ function Portfolio() {
       <Sidebar />
       <Hero />
       <About />
-      <Experience />
       <Projects />
       <Blogs />
+      <Experience />
       <Footer />
     </>
   );
