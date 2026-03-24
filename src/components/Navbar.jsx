@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   const binaryNumbers = ["01", "02", "03", "04"];
-  const menuItems = ["About", "Experience", "Work", "Blog"];
+  const menuItems = ["About", "Experience", "Projects", "Blog"];
 
   return (
     <div className="flex justify-between items-center h-20 w-full px-6 lg:px-20 text-text1 text-lg font-semibold sticky top-0 py-6 z-50 bg-background opacity-95 backdrop-blur-3xl">

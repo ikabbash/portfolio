@@ -3,7 +3,7 @@ import axios from "axios";
 import ProjectCard from "./sub-components/ProjectCard";
 import PersonalProjects from "./sub-components/PersonalProjects";
 
-function Work() {
+function Projects() {
   const [repos, setRepos] = useState([]);
 
   // Fetch GitHub repositories
@@ -34,7 +34,7 @@ function Work() {
 
   return (
     <div className="mb-[150px]">
-      <div className="container px-4 py-4 mx-auto max-w-5xl scroll-mt-24" id="work">
+      <div className="container px-4 py-4 mx-auto max-w-5xl scroll-mt-24" id="projects">
         <div className="mt-4 before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-secondary">
           <h1 className="text-center sm:text-left text-3xl font-bold text-text1 mb-4">
             <span className="text-primary">03. </span> Personal Projects
@@ -72,4 +72,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default Projects;

@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import About from "./components/About";
-import Work from "./components/Work";
+import Projects from "./components/Projects";
 
 function Portfolio() {
   return (
@@ -15,7 +15,7 @@ function Portfolio() {
       <Hero />
       <About />
       <Experience />
-      <Work />
+      <Projects />
       <Blogs />
       <Footer />
     </>
