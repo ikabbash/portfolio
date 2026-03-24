@@ -2,21 +2,22 @@ import SurveyNomadImage from "../../assets/SurveyNomad.png";
 
 const projects = [
   {
+    title: "Homelab",
+    description:
+      "A production-like personal cluster I use daily for self-hosting, automation, and experimenting with new tools. Runs on Talos Linux, with core components bootstrapped via Terraform and applications deployed through GitOps using Argo CD, observability powered by Loki and kube-prometheus-stack, secrets managed by Vault, and SSO via Authentik.",
+    image: "https://raw.githubusercontent.com/ikabbash/homelab/main/docs/images/homelab-setup.png",
+    link: "https://github.com/ikabbash/homelab",
+    hashtags: ["Talos Linux", "Kubernetes", "Helm", "Terraform", "Argo CD", "Cilium", "Vault",
+      "Authentik", "Prometheus", "Grafana", "Loki", "Alloy"],
+  },
+  {
     title: "SurveyNomad",
     description:
-      "A full-stack web application for creating surveys, forums, and timed quizzes with customization options, and featuring results displayed in tables or charts.",
+      "A fullstack web application for creating surveys, forums, and timed quizzes with customization options, and featuring results displayed in tables or charts.",
     image: SurveyNomadImage,
     link: "https://www.canva.com/design/DAFz4GKnduQ/Bsc3sCyUlHibSgl0YXsdSg/view?utm_content=DAFz4GKnduQ&utm_campaign=designshare&utm_medium=link&utm_source=viewer",
     hashtags: ["React", "Express", "NodeJS", "MongoDB", "Redux", "Azure", "Terraform"],
   },
-  // {
-  //   title: "",
-  //   description:
-  //     "",
-  //   image: SurveyNomadImage,
-  //   link: "#",
-  //   hashtags: [""],
-  // },
 ];
 
 const ProjectList = () => {
@@ -33,7 +34,7 @@ const ProjectList = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full md:w-1/4 rounded-lg mb-4 md:mb-0 object-cover"
+              className="w-full md:w-1/4 rounded-lg mb-4 md:mb-0 object-contain"
             />
             <div className="md:ml-6 flex-1">
               <h3 className="text-xl font-bold text-text1 group-hover:text-secondary">
