@@ -14,11 +14,11 @@ function Work() {
     // list of manually select pinned repos temporarily
     // remove the pinnedRepos and filteredRepos, set page=6 again once things are sorted
     const pinnedRepos = [
-      "dotfiles",
-      "toolkit",
-      "topics-extractor",
-      "cheat-sheets",
       "survey-analyzer",
+      "topics-extractor",
+      "toolkit",
+      "org-inviter",
+      "cheat-sheets",
       "openvpn-builder",
     ];
     const filteredRepos = data.filter(repo => pinnedRepos.includes(repo.name));
