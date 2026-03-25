@@ -28,9 +28,8 @@ function Experience() {
                   link: "https://espace.com.eg/",
                   duration: "February 2025 - Present",
                   description: [
-                    "Deployed and managed a containerized multi-service AI system, ensuring smooth integration across 20+ components.",
-                    "Optimized and scaled LLM workloads by deploying and load balancing multiple instances with Ollama before transitioning to vLLM.",
-                    "Set up centralized log shipping with Fluentd pulling from SIEM tools like Azure Sentinel, and supported developers with troubleshooting and system design input.",
+                    "Expanded into GCP, building and owning production GKE clusters from scratch with infrastructure fully managed through Terraform.",
+                    "Delivered solutions for an AI cybersecurity platform, solving complex architecture challenges around SIEM integrations and LLM serving.",
                   ],
                 },
                 {
@@ -39,12 +38,10 @@ function Experience() {
                   link: "https://espace.com.eg/",
                   duration: "February 2023 - January 2025",
                   description: [
-                    "Provisioned and managed AKS and on-prem Kubernetes clusters, deploying .NET and Rails apps using Helm and GitOps.",
-                    "Tackled complex issues by tracing root causes and improving system reliability.",
-                    "Automated tasks with Python and Bash, migrated legacy apps to Kubernetes with zero-downtime,",
-                    "set up monitoring with Prometheus and Grafana, and worked closely with clients and devs to support",
-                    "environments and deliver enhancements, ensuring system reliability.",
-                    "Also lead internal sessions on DevSecOps and Azure AI services."
+                    "Owned a multi-client examination platform across Azure and on-prem Kubernetes, handling deployments, incidents, and day-to-day operations.",
+                    "Migrated all environments from raw Kubernetes manifests to Helm charts, standardizing deployments across all clients.",
+                    "Supported cross-functional teams across multiple projects, helping resolve issues and improve overall system reliability.",
+                    "Cut CI/CD pipeline execution time by 40-50% and Azure costs by 35% through targeted optimization and right-sizing.",
                   ],
                 },
                 {
@@ -53,8 +50,7 @@ function Experience() {
                   link: "https://espace.com.eg/",
                   duration: "August 2022 - October 2022",
                   description: [
-                    "Dockerized apps, managed Kubernetes clusters, and automated deployments with CI/CD.",
-                    "Provisioned AWS EC2 with Terraform, set up Jenkins, and implemented PostgreSQL replication for high availability.",
+                    "Provisioned AWS infrastructure with Terraform, built CI/CD pipelines, and deployed developer interns' projects to Kubernetes."
                   ],
                 },
               ].map((exp, index) => (
@@ -77,9 +73,11 @@ function Experience() {
                   <time className="text-xs tracking-wide text-text2">
                     {exp.duration}
                   </time>
-                  <p className="mt-3 text-text2">
-                    {exp.description.join(" ")}
-                  </p>
+                  <ul className="mt-3 text-text2 list-disc list-inside space-y-1">
+                    {exp.description.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>

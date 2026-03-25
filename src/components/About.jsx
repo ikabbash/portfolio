@@ -19,12 +19,10 @@ function About() {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <p className="text-text2 leading-relaxed">
-                    I specialize in designing and optimizing automation solutions, with
-                    a focus on Kubernetes, and building resilient, scalable systems.
-                    I like to tackle complex systems end-to-end, simplifying operations, enhancing
-                    reliability, and ensuring every component works seamlessly together.
-                    I'm also deeply passionate about self-learning and finding better ways to
-                    solve problems—every challenge is always a chance to make a better impact.
+                    I strive to build solutions that are simple, deliberate, and built to last, with a genuine interest
+                    in open source tools and understanding how things work under the hood. Every challenge is
+                    always a chance to make a better impact, and I enjoy owning systems end-to-end,
+                    figuring out complex challenges, and finding cleaner ways to get things done.
                   </p>
 
                   <p className="text-text2 leading-relaxed">
@@ -39,7 +37,7 @@ function About() {
                   </p>
 
                   <p className="mt-10 text-text2 leading-relaxed">
-                    Interests: Platform Engineering, Homelabbing, Cybersecurity, DevSecOps, AI/ML Ops.
+                    Interests: Platform Engineering, Homelabbing, DevSecOps, MLOps.
                   </p>
                 </div>
 
@@ -50,11 +48,11 @@ function About() {
                   </h3>
                   <div className="flex flex-wrap gap-3">
                     {[
+                      "Linux",
                       "Kubernetes",
-                      "Docker",
                       "Azure",
                       "Helm",
-                      "ArgoCD",
+                      "Argo CD",
                       "Azure DevOps",
                       "GitLab",
                       "Prometheus",

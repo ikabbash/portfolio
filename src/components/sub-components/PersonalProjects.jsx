@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Homelab",
     description:
-      "A production-like personal cluster I use daily for self-hosting, automation, and experimenting with new tools. Runs on Talos Linux, with core components bootstrapped via Terraform and applications deployed through GitOps using Argo CD, observability powered by Loki and kube-prometheus-stack, secrets managed by Vault, and SSO via Authentik.",
+      "A production-like personal cluster I use daily for self-hosting, automation, and experimentation. Runs on Talos Linux, with core components bootstrapped via Terraform and applications deployed through GitOps using Argo CD, observability powered by Loki and kube-prometheus-stack, secrets managed by Vault, and SSO via Authentik.",
     image: "https://raw.githubusercontent.com/ikabbash/homelab/main/docs/images/homelab-setup.png",
     link: "https://github.com/ikabbash/homelab",
     hashtags: ["Talos Linux", "Kubernetes", "Helm", "Terraform", "Argo CD", "Cilium", "Vault",
