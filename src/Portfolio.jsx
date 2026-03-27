@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Blogs from "./components/Blogs";
@@ -6,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import About from "./components/About";
-import Work from "./components/Work";
+import Projects from "./components/Projects";
 
 function Portfolio() {
   return (
@@ -15,9 +14,9 @@ function Portfolio() {
       <Sidebar />
       <Hero />
       <About />
-      <Experience />
-      <Work />
+      <Projects />
       <Blogs />
+      <Experience />
       <Footer />
     </>
   );

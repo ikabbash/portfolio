@@ -1,13 +1,9 @@
-import React from "react";
-import { SiLinkedin, SiGithub, SiDevdotto, SiHashnode } from "react-icons/si";
-import { FaMedium } from "react-icons/fa6";
+import { FaHashnode, FaLinkedin, FaGithub} from "react-icons/fa6";
 
 const socialLinks = [
-  { href: "https://www.linkedin.com/in/ikabbash/", icon: <SiLinkedin /> },
-  { href: "https://github.com/ikabbash", icon: <SiGithub /> },
-  { href: "https://ikabbash.hashnode.dev", icon: <SiHashnode /> },
-  { href: "https://medium.com/@ikabbash", icon: <FaMedium /> },
-  { href: "https://dev.to/ikabbash", icon: <SiDevdotto /> },
+  { href: "https://github.com/ikabbash", icon: <FaGithub /> },
+  { href: "https://www.linkedin.com/in/ikabbash/", icon: <FaLinkedin /> },
+  { href: "https://ikabbash.hashnode.dev", icon: <FaHashnode /> },
 ];
 
 export default function Footer() {

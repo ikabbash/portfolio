@@ -1,7 +1,4 @@
-import React from "react";
-// import { FiYoutube, FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi";
-import { SiLinkedin, SiGithub, SiDevdotto, SiHashnode } from "react-icons/si";
-import { FaMedium } from "react-icons/fa6"
+import { FaHashnode, FaLinkedin, FaGithub} from "react-icons/fa6";
 
 function Sidebar() {
   return (
@@ -10,24 +7,16 @@ function Sidebar() {
       {/* reminder: maybe change xl:flex on above element when hiding the sidebar */}
       <div className="h-[100px] ml-2.5 bg-text2 w-[2px]"></div>
 
-      <a href="https://www.linkedin.com/in/ikabbash/" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
-        <SiLinkedin />
+      <a href="https://github.com/ikabbash" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
+        <FaGithub />
       </a>
 
-      <a href="https://github.com/ikabbash" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
-        <SiGithub />
+      <a href="https://www.linkedin.com/in/ikabbash/" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
+        <FaLinkedin />
       </a>
 
       <a href="https://ikabbash.hashnode.dev" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
-        <SiHashnode />
-      </a>
-
-      <a href="https://medium.com/@ikabbash" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
-        <FaMedium />
-      </a>
-
-      <a href="https://dev.to/ikabbash" target="_blank" className="transition ease-in-out hover:-translate-y-1 hover:scale-100 hover:text-secondary text-text2">
-        <SiDevdotto />
+        <FaHashnode />
       </a>
 
       <div className="h-[100px] ml-2.5 bg-text2 w-[2px]"></div>

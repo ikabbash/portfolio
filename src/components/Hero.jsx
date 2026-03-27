@@ -1,10 +1,9 @@
-import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
   return (
     <div className="text-black px-10">
-      <div className="max-w-screen-lg h-screen w-full mx-auto text-left flex flex-col justify-center sm:px-10 relative -mt-20">
+      <div className="max-w-5xl h-screen w-full mx-auto text-left flex flex-col justify-center sm:px-10 relative -mt-20">
         <p className="text-secondary font-bold p-2 text-lg">
           <TypeAnimation
             sequence={[
@@ -24,7 +23,7 @@ function Hero() {
         </h1>
         <div className="flex">
           <p className="md:text-xl sm:text-lg text-lg font-bold py-2 text-text2">
-            And I'm a DevOps Engineer, committed to learning, growth, and building systems that are reliable, automated, and secure.
+            And I'm a DevOps Engineer who builds systems that are reliable, automated, and secure. Relentlessly committed to learning and growth.
           </p>
         </div>
       </div>
