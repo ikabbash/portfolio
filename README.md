@@ -18,12 +18,6 @@
             alt="Cloudflare Page status"/>
     </a>
 </p>
-<!-- <p align="center">
-    <a >
-        <img src="https://img.shields.io/website?url=https%3A%2F%2Fportfolio-8vk.pages.dev&style=for-the-badge&logo=cloudflarepages&link=https%3A%2F%2Fportfolio-8vk.pages.dev" 
-            alt="Cloudflare Page status"/>
-    </a>
-</p> -->
 
 ![preview](public/thumbnail.png)
 
@@ -45,10 +39,18 @@ docker build -t portfolio .
 docker run -p 8080:80 portfolio
 ```
 
+### Notes
+If you encounter the following error while deploying with Cloudflare Workers or Pages:
+```
+You are using Node.js 18.17.1. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+```
+
+Navigate to **Settings → Variables and Secrets**, then add a new variable with the key `NODE_VERSION` and the value `20`.
+
 ## Color Reference  
-| Color          | Hex        |
-| -------------- | ---------- |
-| Background     | `#020617`  |
+| Color         | Hex        |
+| ------------- | ---------- |
+| Background    | `#020617`  |
 | Text 1        | `#f5f5f5`  |
 | Text 2        | `#aeb4c8`  |
 | Text 3        | `#8892b0`  |
