@@ -7,12 +7,14 @@ function Card({ url, image_url, date, title }) {
         <img
           src={image_url}
           alt="Blog Cover"
-          className="w-full h-52 object-cover"
+          className="w-full h-44 object-cover"
         />
+
         <div className="p-4">
           <h5 className="text-lg font-semibold text-text1 line-clamp-2">
             {title}
           </h5>
+
           <div className="mt-2 text-right">
             <span className="text-sm text-text2">
               {dayjs(date).format("MM/DD/YYYY")}

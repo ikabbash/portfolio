@@ -1,7 +1,7 @@
 function About() {
   return (
     <>
-      <div className="mb-[200px] scroll-mt-24" id="about">
+      <div className="mb-50 scroll-mt-24" id="about">
         <div className="container max-w-5xl mx-auto py-4 px-4 md:px-10 flex flex-col-reverse lg:flex-row items-center gap-20">
           <div className="my-auto flex flex-col gap-3">
           {/* Bar and Header container */}

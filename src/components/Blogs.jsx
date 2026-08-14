@@ -2,53 +2,30 @@ import { useEffect, useState } from "react";
 import Card from "./sub-components/Card";
 
 export default function () {
-  const [hashArticles, setHashArticles] = useState([]);
+  const [articles, setArticles] = useState([]);
 
   // fetch
-  const getHashnode = async () => {
-    // note: slug is the part of the URL
-    const query = `
-      query {
-        publication(host: "ikabbash.hashnode.dev") {
-          posts(first: 3) {
-            edges {
-              node {
-                title
-                slug
-                coverImage {
-                  url
-                }
-                url
-                publishedAt
-              }
-            }
-          }
-        }
-      }`;
+  const getDevTo = async () => {
+    try {
+      const response = await fetch(
+        "https://dev.to/api/articles?username=ikabbash&per_page=3"
+      );
 
-    const response = await fetch("https://gql.hashnode.com/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ query }),
-    });
-
-    const { data } = await response.json();
-    setHashArticles(data.publication.posts.edges);
+      const data = await response.json();
+      setArticles(data);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   useEffect(() => {
-    getHashnode();
+    getDevTo();
   }, []);
-
-  // console.log(hashArticles?.[0]?.node);
-  // console.log(hashArticles);
 
   return (
     <>
       {/* reference: https://www.floatui.com/components/cards */}
-      <section className="mx-auto px-4 max-w-5xl scroll-mt-24 mb-[200px]" id="blog">
+      <section className="mx-auto px-4 max-w-5xl scroll-mt-24 mb-50" id="blog">
         <div className="mt-4 before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-secondary">
           <h1 className="text-center sm:text-left text-3xl font-bold text-text1">
             <span className="text-primary">03. </span>
@@ -57,15 +34,14 @@ export default function () {
         </div>
 
         <div className="mt-4 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-0">
-          {/* Hashnode */}
-          {hashArticles.map((key) => {
+          {articles.map((article) => {
             return (
               <Card
-                key={key.node.slug}
-                url={key.node.url}
-                title={key.node.title}
-                image_url={key.node.coverImage.url}
-                date={key.node.publishedAt}
+                key={article.id}
+                url={article.url}
+                title={article.title}
+                image_url={article.cover_image || article.social_image}
+                date={article.published_at}
               />
             );
           })}
@@ -75,11 +51,11 @@ export default function () {
           <span className="text-lg py-1 text-text2">
             Check out my other articles on{" "}
             <a
-              href="https://ikabbash.hashnode.dev"
+              href="https://dev.to/ikabbash"
               target="_blank"
               className="text-secondary font-semibold hover:underline transition-all duration-500"
             >
-              Hashnode
+              Dev.to
             </a>
             .
           </span>
