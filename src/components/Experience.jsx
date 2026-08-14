@@ -2,7 +2,7 @@ import Certificates from "./sub-components/Certificates";
 
 function Experience() {
   return (
-    <section className="mb-[200px] scroll-mt-24" id="experience">
+    <section className="mb-50 scroll-mt-24" id="experience">
       <div className="container max-w-5xl mx-auto py-4 md:px-4">
         <div className="grid gap-4 sm:grid-cols-12 mx-4">
           {/* Section Header */}
@@ -18,7 +18,7 @@ function Experience() {
 
           {/* Experience Content */}
           <div className="sm:col-span-9 relative px-4 space-y-6">
-            <div className="space-y-12 relative sm:space-y-8 sm:before:absolute sm:before:top-0 sm:before:bottom-0 sm:before:w-0.5 sm:before:left-[-30px] before:dark:bg-gray-700">
+            <div className="space-y-12 relative sm:space-y-8 sm:before:absolute sm:before:top-0 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-7.5 before:dark:bg-gray-700">
               
               {/** Experience Items */}
               {[
@@ -26,8 +26,9 @@ function Experience() {
                   title: "Mid-Level DevOps Engineer",
                   company: "eSpace",
                   link: "https://espace.com.eg/",
-                  duration: "February 2025 - Present",
+                  duration: "February 2025 - July 2026",
                   description: [
+                    "Built multiple Azure infrastructure environments (AKS, Fileshare, VMs, Azure SQL, etc.) using Terraform, ensuring consistent, repeatable deployments across other projects.",
                     "Expanded into GCP, building and owning production GKE clusters from scratch with infrastructure fully managed through Terraform.",
                     "Delivered solutions for an AI cybersecurity platform, solving complex architecture challenges around SIEM integrations and LLM serving.",
                   ],
@@ -56,7 +57,7 @@ function Experience() {
               ].map((exp, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:relative sm:before:absolute sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-37px] sm:before:top-0 sm:before:translate-y-[6px] sm:before:z-1 before:dark:bg-primary"
+                  className="flex flex-col sm:relative sm:before:absolute sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:-left-9.25 sm:before:top-0 sm:before:translate-y-1.5 sm:before:z-1 before:dark:bg-primary"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-text1">
                     {exp.title}{" "}

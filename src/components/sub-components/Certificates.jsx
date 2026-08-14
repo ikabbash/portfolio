@@ -51,7 +51,7 @@ function Certificates() {
               className="flex justify-between items-center p-2 px-4 rounded-md transition-all duration-200 hover:bg-card hover:shadow-md"
             >
               <h5 className="text-base text-text2 font-semibold">{title}</h5>
-              <p className="text-sm text-text3 whitespace-nowrap min-w-[70px] text-right">{date}</p>
+              <p className="text-sm text-text3 whitespace-nowrap min-w-17.5 text-right">{date}</p>
             </a>
           ))}
         </div>

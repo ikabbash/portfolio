@@ -1,9 +1,9 @@
-import { FaHashnode, FaLinkedin, FaGithub} from "react-icons/fa6";
+import { FaDev, FaLinkedin, FaGithub} from "react-icons/fa6";
 
 const socialLinks = [
   { href: "https://github.com/ikabbash", icon: <FaGithub /> },
   { href: "https://www.linkedin.com/in/ikabbash/", icon: <FaLinkedin /> },
-  { href: "https://ikabbash.hashnode.dev", icon: <FaHashnode /> },
+  { href: "https://dev.to/ikabbash", icon: <FaDev /> },
 ];
 
 export default function Footer() {
